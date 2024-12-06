@@ -1,0 +1,187 @@
+{
+  "@vue/composition-api": {
+    "metas": {
+      "slug": "composition-api",
+      "name": "@vue/composition-api",
+      "icon": null,
+      "url": "https://github.com/vuejs/composition-api"
+    },
+    "detectors": {
+      "js": [
+        "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.__composition_api_state__)).filter(Boolean).length"
+      ]
+    }
+  },
+  "vue-router": {
+    "metas": {
+      "slug": "vue-router",
+      "name": "vue-router",
+      "icon": null,
+      "url": "https://router.vuejs.org/"
+    },
+    "detectors": {
+      "js": [
+        "window.$nuxt?.$router && window.$nuxt?.$route",
+        "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$router && el.__vue__?.$route)).filter(Boolean).length",
+        "[...document.querySelectorAll('*')].map((el) => el.__vue_app__?.config?.globalProperties?.$router).filter(Boolean).length"
+      ]
+    }
+  },
+  "vuex": {
+    "metas": {
+      "slug": "vuex",
+      "name": "vuex",
+      "icon": null,
+      "url": "https://vuex.vuejs.org"
+    },
+    "detectors": {
+      "js": [
+        "window.$nuxt?.$store?.dispatch && window.$nuxt?.$store?.commit",
+        "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$store?.dispatch && el.__vue__?.$store?.commit)).filter(Boolean).length"
+      ]
+    }
+  },
+  "vue-meta": {
+    "metas": {
+      "slug": "vue-meta",
+      "name": "vue-meta",
+      "icon": null,
+      "url": "https://vue-meta.nuxtjs.org"
+    },
+    "detectors": {
+      "js": [
+        "window.$nuxt?.$meta && window.$nuxt.$meta() && window.$nuxt.$meta().getOptions",
+        "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$meta && el.__vue__.$meta() && el.__vue__.$meta().getOptions)).filter(Boolean).length"
+      ]
+    }
+  },
+  "vue-apollo": {
+    "metas": {
+      "slug": "vue-apollo",
+      "name": "vue-apollo",
+      "icon": null,
+      "url": "https://apollo.vuejs.org"
+    },
+    "detectors": {
+      "js": "window.$nuxt?.$apollo || [...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$apollo)).filter(Boolean).length"
+    }
+  },
+  "vue-warehouse": {
+    "metas": {
+      "slug": "vue-warehouse",
+      "name": "vue-warehouse",
+      "icon": null,
+      "url": "https://marquez.co/docs/vue-warehouse"
+    },
+    "detectors": {
+      "js": "window.$nuxt?.$warehouse || [...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$warehouse)).filter(Boolean).length"
+    }
+  },
+  "vue-i18n": {
+    "metas": {
+      "slug": "vue-i18n",
+      "name": "vue-i18n",
+      "icon": null,
+      "url": "https://kazupon.github.io/vue-i18n/"
+    },
+    "detectors": {
+      "js": [
+        "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$i18n)).filter(Boolean).length",
+        "window.__VUE_I18N_LEGACY_API__ || window.__VUE_I18N_FULL_INSTALL__"
+      ]
+    }
+  },
+  "@braid/vue-formulate": {
+    "metas": {
+      "slug": "vue-formulate",
+      "name": "@braid/vue-formulate",
+      "icon": "vue-formulate",
+      "url": "https://vueformulate.com/"
+    },
+    "detectors": {
+      "js": "Boolean([...document.querySelectorAll('*')].find((el) => Boolean(el.__vue__?.$formulate)))"
+    }
+  },
+  "@inertiajs/inertia-vue": {
+    "metas": {
+      "slug": "inertia-vue",
+      "name": "@inertiajs/inertia-vue",
+      "icon": "inertiajs",
+      "url": "https://inertiajs.com/"
+    },
+    "detectors": {
+      "js": [
+        "Boolean([...document.querySelectorAll('*')].find((el) => Boolean(el.__vue__?.$inertia)))",
+        "[...document.querySelectorAll('*')].map((el) => el.__vue_app__?.config?.globalProperties?.$inertia).filter(Boolean).length"
+      ]
+    }
+  },
+  "vee-validate": {
+    "metas": {
+      "slug": "vee-validate",
+      "name": "vee-validate",
+      "icon": null,
+      "url": "https://vee-validate.logaretm.com/"
+    },
+    "detectors": {
+      "js": "window.VeeValidate || Boolean([...document.querySelectorAll('*')].find((el) => Boolean(el.__vue__ && ('$_veeObserver' in el.__vue__ || (el.__vue__.$validator && 'attach' in el.__vue__.$validator)) || el.__vueParentComponent && el.__vueParentComponent.provides && Reflect.ownKeys(el.__vueParentComponent.provides).some(i => /vee-validate/i.test(i.description)) )))"
+    }
+  },
+  "vue-plausible": {
+    "metas": {
+      "slug": "vue-plausible",
+      "name": "vue-plausible",
+      "icon": null,
+      "url": "https://github.com/moritzsternemann/vue-plausible"
+    },
+    "detectors": {
+      "js": "window.Vue?.$plausible || window.$nuxt?.$plausible || Boolean([...document.querySelectorAll('*')].find((el) => Boolean(el.__vue__?.$plausible)))"
+    }
+  },
+  "vue-tour": {
+    "metas": {
+      "slug": "vue-tour",
+      "name": "vue-tour",
+      "icon": null,
+      "url": "https://github.com/pulsardev/vue-tour"
+    },
+    "detectors": {
+      "js": "window.Vue?.$tours || window.$nuxt?.$tours || Boolean([...document.querySelectorAll('*')].find((el) => Boolean(el.__vue__?.$tours)))"
+    }
+  },
+  "pinia": {
+    "metas": {
+      "slug": "pinia",
+      "name": "Pinia",
+      "icon": "pinia",
+      "url": "https://pinia.esm.dev"
+    },
+    "detectors": {
+      "js": [
+        "[...document.querySelectorAll('*')].filter((el) => el.__vue__?.$pinia || el.__vue_app__?.config?.globalProperties?.$pinia).length"
+      ]
+    }
+  },
+  "harlem": {
+    "metas": {
+      "slug": "harlem",
+      "name": "Harlem",
+      "icon": "harlem",
+      "url": "https://harlemjs.com"
+    },
+    "detectors": {
+      "js": "Boolean(window.$harlem?.createInstance)"
+    }
+  },
+  "@formkit/vue": {
+    "metas": {
+      "slug": "formkit",
+      "name": "@formkit/vue",
+      "icon": "formkit",
+      "url": "https://formkit.com/"
+    },
+    "detectors": {
+      "js": "Boolean([...document.querySelectorAll('*')].map((el) => el.__vue_app__).filter((el) => el && el.config && el.config.globalProperties && el.config.globalProperties.$formkit).length)"
+    }
+  }
+}

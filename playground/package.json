@@ -1,0 +1,17 @@
+{
+  "name": "playground",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "MIT",
+  "keywords": [],
+  "main": "index.js",
+  "type": "module",
+  "dependencies": {
+    "vuetracker-analyzer": "^0.1.2"
+  },
+  "devDependencies": {
+    "@whatwg-node/server": "^0.9.60",
+    "itty-router": "^5.0.18"
+  }
+}

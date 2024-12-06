@@ -1,0 +1,19 @@
+{
+  "metas": {
+    "slug": "vue",
+    "name": "Vue",
+    "icon": "vue",
+    "url": "https://vuejs.org"
+  },
+  "detectors": {
+    "html": "<[^>]+\\sdata-v(?:ue)?-",
+    "js": "(window.Vue && window.Vue.version) || window.$nuxt || [...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__) || Boolean(el.__vue_app__)).filter(Boolean).length",
+    "script": [
+      "vue[.-]([\\d.]*\\d)[^/]*\\.js\\;version:\\1",
+      "(?:/([\\d.]+))?/vue(?:\\.min)?\\.js\\;version:\\1"
+    ],
+    "headers": {
+      "x-powered-by": "nuxt"
+    }
+  }
+}

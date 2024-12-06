@@ -1,0 +1,183 @@
+{
+  "oruga": {
+    "metas": {
+      "slug": "oruga",
+      "name": "Oruga",
+      "icon": "oruga",
+      "url": "https://oruga.io"
+    },
+    "detectors": {
+      "js": [
+        "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$options.isOruga)).filter(Boolean).length",
+        "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue_app__?.config?.globalProperties?.$oruga)).filter(Boolean).length"
+      ]
+    }
+  },
+  "element-ui": {
+    "metas": {
+      "slug": "element-ui",
+      "name": "Element UI",
+      "icon": "element",
+      "url": "https://element.eleme.io/"
+    },
+    "detectors": {
+      "html": "<(?:div|button|a) [^>]*class=\"el-(?:table-column|table-filter|popper|pagination|pager|select-group|form|form-item|color-predefine|color-hue-slider|color-svpanel|color-alpha-slider|color-dropdown|color-picker|badge|tree|tree-node|select|message|dialog|checkbox|checkbox-button|checkbox-group|container|steps|carousel|menu|menu-item|submenu|menu-item-group|button|button-group|card|table|select-dropdown|row|tabs|notification|radio|progress|progress-bar|tag|popover|tooltip|cascader|cascader-menus|cascader-menu|time-spinner|spinner|spinner-inner|transfer|transfer-panel|rate|slider|dropdown|dropdown-menu|textarea|input|input-group|popup-parent|radio-group|main|breadcrumb|time-range-picker|date-range-picker|year-table|date-editor|range-editor|time-spinner|date-picker|time-panel|date-table|month-table|picker-panel|collapse|collapse-item|alert|select-dropdown|select-dropdown__empty|select-dropdown__wrap|select-dropdown__list|scrollbar|switch|carousel|upload|upload-dragger|upload-list|upload-cover|aside|input-number|header|message-box|footer|radio-button|step|autocomplete|autocomplete-suggestion|loading-parent|loading-mask|loading-spinner)"
+    }
+  },
+  "vuetify": {
+    "metas": {
+      "slug": "vuetify",
+      "name": "Vuetify",
+      "icon": "vuetify",
+      "url": "https://vuetifyjs.com/"
+    },
+    "detectors": {
+      "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$vuetify)).filter(Boolean).length"
+    }
+  },
+  "bootstrap-vue": {
+    "metas": {
+      "slug": "bootstrap-vue",
+      "name": "Bootstrap Vue",
+      "icon": "bootstrap",
+      "url": "https://bootstrap-vue.org/"
+    },
+    "detectors": {
+      "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$bvModal || el.__vue__?.$bvConfig || el.__vue__?.$bvToast)).filter(Boolean).length"
+    }
+  },
+  "vue-tailwind": {
+    "metas": {
+      "slug": "vue-tailwind",
+      "name": "VueTailwind",
+      "icon": "vue-tailwind",
+      "url": "https://www.vue-tailwind.com/"
+    },
+    "detectors": {
+      "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$vueTailwind || (el.__vue__?.$options?.components.TInput && el.__vue__?.$options?.components?.TButton && el.__vue__?.$options?.components?.TModal))).filter(Boolean).length"
+    }
+  },
+  "tailwindcss": {
+    "metas": {
+      "slug": "tailwind-css",
+      "name": "Tailwind CSS",
+      "icon": "tailwind",
+      "url": "https://tailwindcss.com/"
+    },
+    "detectors": {
+      "html": [
+        "<link [^>]*href=\"[^\"]+tailwindcss(?:\\.min)?\\.css",
+        "<(?:div|button|a) [^>]*class=\"[^\"]*(?:sm:|md:|lg:|xl:|hover:|active:|focus:|disabled:|visited:|first:|last:|odd:|even:|group-hover:|focus-within:)"
+      ]
+    },
+    "priority": -1
+  },
+  "buefy": {
+    "metas": {
+      "slug": "buefy",
+      "name": "Buefy",
+      "icon": "buefy",
+      "url": "https://buefy.org/"
+    },
+    "detectors": {
+      "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$buefy)).filter(Boolean).length"
+    }
+  },
+  "inkline": {
+    "metas": {
+      "slug": "inkline",
+      "name": "Inkline",
+      "icon": "inkline",
+      "url": "https://inkline.io/"
+    },
+    "detectors": {
+      "html": "<(?:div|button|a) [^>]*class=\"[^\"]*[^_](?:_border-|_rounded|_rounded-|_clearfix|_background-|_display-|_embed|_float-|_overflow-|_overlay|_position-|_width-|_margin-|_padding-|_align-|_visibility-)"
+    }
+  },
+  "chakra-ui": {
+    "metas": {
+      "slug": "chakra-ui",
+      "name": "Chakra UI",
+      "icon": "chakra-ui",
+      "url": "https://vue.chakra-ui.com"
+    },
+    "detectors": {
+      "js": [
+        "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$chakra)).filter(Boolean).length",
+        "[...document.querySelectorAll('*')].map((el) => el.__vue_app__?.config?.globalProperties?.$chakraTheme).filter(Boolean).length"
+      ]
+    }
+  },
+  "primevue": {
+    "metas": {
+      "slug": "primevue",
+      "name": "PrimeVue",
+      "icon": "primevue",
+      "url": "https://www.primefaces.org/primevue/showcase"
+    },
+    "detectors": {
+      "js": [
+        "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$primevue)).filter(Boolean).length",
+        "[...document.querySelectorAll('*')].map((el) => el.__vue_app__?.config?.globalProperties?.$primevue).filter(Boolean).length"
+      ]
+    }
+  },
+  "vuesax": {
+    "metas": {
+      "slug": "vuesax",
+      "name": "Vuesax",
+      "icon": "vuesax",
+      "url": "https://vuesax.com"
+    },
+    "detectors": {
+      "js": "[...document.querySelectorAll('*')].map((el) => el.__vue__?.$vs?.loading).filter(Boolean).length"
+    }
+  },
+  "iview": {
+    "metas": {
+      "slug": "iview",
+      "name": "iView",
+      "icon": "iview",
+      "url": "http://iview.talkingdata.com"
+    },
+    "detectors": {
+      "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$IVIEW)).filter(Boolean).length"
+    }
+  },
+  "vue-material": {
+    "metas": {
+      "slug": "vue-material",
+      "name": "Vue Material",
+      "icon": "vue-material",
+      "url": "https://www.creative-tim.com/vuematerial"
+    },
+    "detectors": {
+      "html": [
+        "<link [^>]*href=\"[^\"]+vue-material(?:\\.min)?\\.css"
+      ],
+      "js": "[...document.querySelectorAll('*')].map((el) => el.__vue__?.$material).filter(Boolean).length"
+    }
+  },
+  "vulk": {
+    "metas": {
+      "slug": "vulk",
+      "name": "Vulk",
+      "icon": "vulk",
+      "url": "https://vulk.cssninja.io"
+    },
+    "detectors": {
+      "js": "[...document.querySelectorAll('*')].map((el) => el.__vue_app__?._context?.provides?.vulk).filter(Boolean).length"
+    }
+  },
+  "arco-design": {
+    "metas": {
+      "slug": "arco-design",
+      "name": "Arco Design",
+      "icon": "arco",
+      "url": "https://arco.design"
+    },
+    "detectors": {
+      "html": "<(?:div|button|a) [^>]*class=\"arco-[a-z0-9-]*"
+    }
+  }
+}

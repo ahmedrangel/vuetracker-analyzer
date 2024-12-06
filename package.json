@@ -54,7 +54,7 @@
   },
   "dependencies": {
     "consola": "^3.2.3",
-    "puppeteer": "^23.10.0",
+    "puppeteer": "^23.10.1",
     "tld-extract": "^2.1.0"
   },
   "devDependencies": {

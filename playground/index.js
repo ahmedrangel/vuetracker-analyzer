@@ -1,7 +1,8 @@
-import { createServerAdapter } from "@whatwg-node/server";
 import { createServer } from "http";
+import { createServerAdapter } from "@whatwg-node/server";
 import { AutoRouter } from "itty-router";
 import { analyze } from "vuetracker-analyzer";
+
 const router = AutoRouter();
 
 router.get("/vue-telescope/analyze?", async (req) => {

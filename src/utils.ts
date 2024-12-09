@@ -104,7 +104,7 @@ export const puppeteerArgs = [
   "--no-sandbox",
   "--disable-setuid-sandbox",
   "--headless",
-  "--disable-gpu",
+  "--disable-gpu"
 ];
 export const puppeteerViewport = {
   deviceScaleFactor: 1,

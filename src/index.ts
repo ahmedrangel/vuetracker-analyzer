@@ -132,7 +132,7 @@ export async function analyze (originalUrl: string, options: { browserWSEndpoint
 
     // Use for detection
     const context = { originalHtml, html, scripts, page, headers };
-    const contextHasVue = await hasVue(context)
+    const contextHasVue = await hasVue(context);
     if (!contextHasVue) {
       const error = new Error(`Vue is not detected on ${originalUrl}`, {
         cause: { code: ERROR_CODES.VUE_NOT_DETECTED }
@@ -173,7 +173,7 @@ export async function analyze (originalUrl: string, options: { browserWSEndpoint
     if (contextHasVue) {
       const vueVersionDetector = "window.Vue?.version || [...document.querySelectorAll(\"*\")].map((el) => el.__vue__?.$root?.constructor?.version || el.__vue_app__?.version).filter(Boolean)[0]";
       const fn = await page.waitForFunction(vueVersionDetector, { timeout: 20000 });
-      const version = await fn.jsonValue() as string
+      const version = await fn.jsonValue() as string;
       if (version) infos.vueVersion = version;
     }
 

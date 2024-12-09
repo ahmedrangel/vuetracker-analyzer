@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v0.1.6
+
+[compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.1.5...v0.1.6)
+
+### 🩹 Fixes
+
+- **playground:** Adjust user agent ([057d479](https://github.com/ahmedrangel/vuetracker-analyzer/commit/057d479))
+- Lookup for shortcut icon link ([49c7f4c](https://github.com/ahmedrangel/vuetracker-analyzer/commit/49c7f4c))
+
+### ❤️ Contributors
+
+- Ahmed Rangel ([@ahmedrangel](http://github.com/ahmedrangel))
+
 ## v0.1.5
 
 [compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.1.4...v0.1.5)

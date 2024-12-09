@@ -8,7 +8,7 @@
   "main": "index.js",
   "type": "module",
   "dependencies": {
-    "vuetracker-analyzer": "latest"
+    "vuetracker-analyzer": "workspace:*"
   },
   "devDependencies": {
     "@whatwg-node/server": "^0.9.60",

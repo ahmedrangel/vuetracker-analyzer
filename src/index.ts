@@ -155,7 +155,7 @@ export async function analyze (originalUrl: string, options: { browserWSEndpoint
       sizes: element.sizes?.value || null
     }))?.sort((a, b) => (Number(b.sizes?.split("x")[0]) || 0) - (Number(a.sizes?.split("x")[0]) || 0))).catch(() => []);
 
-    infos.meta.ogImage = await page.$eval("head > meta[property=\"og:image\"]", element => element.content).catch(() => null);
+    infos.meta.ogImage = await page.$eval("head > meta:is([property=\"og:image\"], [name=\"og:image\"])", element => element.content).catch(() => null);
 
     // Is adult website?
     const rtaLabel = await page.$eval("head > meta[name=\"rating\"]", element => element.content).catch(() => null);

@@ -105,7 +105,6 @@ export const puppeteerArgs = [
   "--disable-setuid-sandbox",
   "--headless",
   "--disable-gpu",
-  "--window-size=100,100"
 ];
 export const puppeteerViewport = {
   deviceScaleFactor: 1,
@@ -113,5 +112,5 @@ export const puppeteerViewport = {
   height: 100,
   isLandscape: true,
   isMobile: false,
-  width: 100
+  width: 1024
 };

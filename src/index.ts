@@ -80,11 +80,11 @@ export async function analyze (originalUrl: string, options: { browserWSEndpoint
     await page.setCacheEnabled(false); // disable cache for avoiding 304
     await page.setUserAgent(options?.userAgent || `VueTracker/${pkg.version}`);
     await page.setViewport({
-      width: 100,
-      height: 100,
+      width: 1024, // 1024 because sometimes vue is not detected when width is too small
+      height: 100, // 100 for better performance
       deviceScaleFactor: 1
     });
-    await page.setCookie({
+    await page.browserContext().setCookie({
       name: "gtm_cookie_consent",
       value: "functional:1|analytics:1|customization:1|advertising:1",
       domain: url.hostname

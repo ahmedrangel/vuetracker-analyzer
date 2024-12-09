@@ -1,6 +1,24 @@
 # Changelog
 
 
+## v0.1.7
+
+[compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.1.6...v0.1.7)
+
+### 🩹 Fixes
+
+- Look for meta name og:image also ([273c961](https://github.com/ahmedrangel/vuetracker-analyzer/commit/273c961))
+
+### 🏡 Chore
+
+- Lint ([363682e](https://github.com/ahmedrangel/vuetracker-analyzer/commit/363682e))
+- **eslint:** Adjust config ([38582ec](https://github.com/ahmedrangel/vuetracker-analyzer/commit/38582ec))
+- Lint ([5ce77fb](https://github.com/ahmedrangel/vuetracker-analyzer/commit/5ce77fb))
+
+### ❤️ Contributors
+
+- Ahmed Rangel ([@ahmedrangel](http://github.com/ahmedrangel))
+
 ## v0.1.6
 
 [compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.1.5...v0.1.6)

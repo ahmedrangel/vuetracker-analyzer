@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.1.5
+
+[compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.1.4...v0.1.5)
+
+### 🩹 Fixes
+
+- Improve vue version detection ([dff3140](https://github.com/ahmedrangel/vuetracker-analyzer/commit/dff3140))
+
+### ❤️ Contributors
+
+- Ahmed Rangel ([@ahmedrangel](http://github.com/ahmedrangel))
+
 ## v0.1.4
 
 

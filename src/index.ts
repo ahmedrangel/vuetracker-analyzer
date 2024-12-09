@@ -150,7 +150,7 @@ export async function analyze (originalUrl: string, options: { browserWSEndpoint
     infos.meta.description = await page.$eval("head > meta:is([property=\"description\"], [name=\"description\"])", element => element.content).catch(() => null);
     infos.meta.siteName = await page.$eval("head > meta:is([property=\"og:site_name\"], [name=\"og:site_name\"])", element => element.content).catch(() => null);
 
-    infos.meta.icons = await page.$$eval("head > link[rel=\"icon\"]", elements => elements.map(element => ({
+    infos.meta.icons = await page.$$eval("head > link:is([rel=\"icon\"], [rel=\"shortcut icon\"])", elements => elements.map(element => ({
       url: element.href,
       sizes: element.sizes?.value || null
     }))?.sort((a, b) => (Number(b.sizes?.split("x")[0]) || 0) - (Number(a.sizes?.split("x")[0]) || 0))).catch(() => []);

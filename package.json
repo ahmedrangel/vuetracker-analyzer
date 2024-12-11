@@ -6,7 +6,7 @@
   "scripts": {
     "build": "unbuild",
     "prepack": "pnpm build",
-    "dev": "node playground/index.js",
+    "dev": "pnpm build && node playground/index.js",
     "lint": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

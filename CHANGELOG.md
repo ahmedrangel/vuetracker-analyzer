@@ -1,6 +1,25 @@
 # Changelog
 
 
+## v0.1.8
+
+[compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.1.7...v0.1.8)
+
+### 🩹 Fixes
+
+- Oruga ui wrong url ([28bd85e](https://github.com/ahmedrangel/vuetracker-analyzer/commit/28bd85e))
+
+### 🏡 Chore
+
+- **release:** V0.1.7 ([f3a810f](https://github.com/ahmedrangel/vuetracker-analyzer/commit/f3a810f))
+- **package:** Build before running dev ([15ecc70](https://github.com/ahmedrangel/vuetracker-analyzer/commit/15ecc70))
+- **playground:** Handle analyze error ([d4fdcca](https://github.com/ahmedrangel/vuetracker-analyzer/commit/d4fdcca))
+- Update deps ([373686a](https://github.com/ahmedrangel/vuetracker-analyzer/commit/373686a))
+
+### ❤️ Contributors
+
+- Ahmed Rangel ([@ahmedrangel](http://github.com/ahmedrangel))
+
 ## v0.1.7
 
 [compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.1.6...v0.1.7)

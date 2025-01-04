@@ -15,7 +15,7 @@ const puppeteerDefaultArgs = {
   ignoreHTTPSErrors: true
 };
 
-export async function analyze (originalUrl: string, options: { browserWSEndpoint?: ConnectOptions["browserWSEndpoint"], userAgent?: string } = {}) {
+export async function analyze (originalUrl: string, options: { browserWSEndpoint?: ConnectOptions["browserWSEndpoint"], userAgent?: string, executablePath?: string } = {}) {
   // Parse url
   let url;
   try {
@@ -37,6 +37,7 @@ export async function analyze (originalUrl: string, options: { browserWSEndpoint
     }
     else {
       browser = await puppeteer.launch({
+        ...options.executablePath && { executablePath: options.executablePath },
         ...puppeteerDefaultArgs
       });
     }

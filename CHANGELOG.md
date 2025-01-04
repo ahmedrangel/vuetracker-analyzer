@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v0.1.9
+
+[compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.1.8...v0.1.9)
+
+### 🚀 Enhancements
+
+- Add puppeteer executable path option ([749e6b7](https://github.com/ahmedrangel/vuetracker-analyzer/commit/749e6b7))
+
+### 🏡 Chore
+
+- Update deps ([5d1c77b](https://github.com/ahmedrangel/vuetracker-analyzer/commit/5d1c77b))
+
+### ❤️ Contributors
+
+- Ahmed Rangel ([@ahmedrangel](http://github.com/ahmedrangel))
+
 ## v0.1.8
 
 [compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.1.7...v0.1.8)

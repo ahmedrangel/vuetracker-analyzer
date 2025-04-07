@@ -553,7 +553,7 @@
       "url": "https://github.com/atinux/nuxt-auth-utils"
     },
     "detectors": {
-      "js": "(window.__NUXT__?.state && window.__NUXT__?.state['$snuxt-auth-ready'] && window.__NUXT__?.state['$snuxt-session'])"
+      "js": "(useNuxtApp?.().payload?.state && useNuxtApp?.().payload?.state?.['$snuxt-auth-ready'] && useNuxtApp?.().payload?.state?.['$snuxt-session']) || (window.__NUXT__?.state && window.__NUXT__?.state?.['$snuxt-auth-ready'] && window.__NUXT__?.state?.['$snuxt-session'])"
     }
   },
   "@nuxt/scripts": {
@@ -564,7 +564,7 @@
       "url": "https://scripts.nuxt.com"
     },
     "detectors": {
-      "js": "useNuxtApp?.().payload?.config?.public?.['nuxt-scripts'] || window.__unctx__?.get('nuxt-app')?.use().payload?.config?.public?.['nuxt-scripts']"
+      "js": "useNuxtApp?.().payload?.config?.public?.['nuxt-scripts'] || window.__unctx__?.get('nuxt-app')?.use().payload?.config?.public?.['nuxt-scripts'] || window.__NUXT__?.config?.public?.['nuxt-scripts']"
     }
   },
   "@nuxt/icon": {
@@ -586,7 +586,18 @@
       "url": "https://hub.nuxt.com"
     },
     "detectors": {
-      "js": "useNuxtApp?.().payload?.config?.public?.hub || window.__unctx__?.get('nuxt-app')?.use().payload?.config?.public?.hub"
+      "js": "useNuxtApp?.().payload?.config?.public?.hub || window.__unctx__?.get('nuxt-app')?.use().payload?.config?.public?.hub || window.__NUXT__?.config?.public?.hub"
+    }
+  },
+  "@nuxtjs/turnstile": {
+    "metas": {
+      "slug": "nuxtjs-turnstile",
+      "name": "@nuxtjs/turnstile",
+      "icon": null,
+      "url": "https://github.com/nuxt-modules/turnstile"
+    },
+    "detectors": {
+      "js": "useNuxtApp?.().payload?.config?.public?.turnstile || window.__unctx__?.get('nuxt-app')?.use().payload?.config?.public?.turnstile || window.__NUXT__?.config?.public?.turnstile"
     }
   }
 }

@@ -1,6 +1,24 @@
 # Changelog
 
 
+## v0.1.10
+
+[compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.1.9...v0.1.10)
+
+### 🚀 Enhancements
+
+- Add @nuxtjs/turnstile detector + adjust some detectors ([1725c74](https://github.com/ahmedrangel/vuetracker-analyzer/commit/1725c74))
+
+### 🏡 Chore
+
+- **release:** V0.1.9 ([73f680f](https://github.com/ahmedrangel/vuetracker-analyzer/commit/73f680f))
+- Update deps ([b7337d0](https://github.com/ahmedrangel/vuetracker-analyzer/commit/b7337d0))
+- **playground:** Adjust ([b502e02](https://github.com/ahmedrangel/vuetracker-analyzer/commit/b502e02))
+
+### ❤️ Contributors
+
+- Ahmed Rangel ([@ahmedrangel](https://github.com/ahmedrangel))
+
 ## v0.1.9
 
 [compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.1.8...v0.1.9)

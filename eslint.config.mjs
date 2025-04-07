@@ -1,15 +1,14 @@
+import { resolve } from "node:path";
 import stylistic from "@stylistic/eslint-plugin";
 import parserTs from "@typescript-eslint/parser";
 import tsPlugin from "@typescript-eslint/eslint-plugin";
 import importPlugin from "eslint-plugin-import";
+import { includeIgnoreFile } from "@eslint/compat";
 
 export default [
+  includeIgnoreFile(resolve(".gitignore")),
   {
     files: ["**/*.js", "**/*.mjs", "**/*.ts"],
-    ignores: [
-      "node_modules/**/*",
-      "dist/**/*"
-    ],
     plugins: {
       "@stylistic": stylistic,
       "@typescript-eslint": tsPlugin,

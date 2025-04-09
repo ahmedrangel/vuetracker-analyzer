@@ -39,7 +39,7 @@
     "metas": {
       "slug": "bootstrap-vue",
       "name": "Bootstrap Vue",
-      "icon": "bootstrap",
+      "icon": "bootstrap-vue",
       "url": "https://bootstrap-vue.org/"
     },
     "detectors": {

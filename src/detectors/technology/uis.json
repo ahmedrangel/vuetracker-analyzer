@@ -113,7 +113,7 @@
       "slug": "primevue",
       "name": "PrimeVue",
       "icon": "primevue",
-      "url": "https://www.primefaces.org/primevue/showcase"
+      "url": "https://primevue.org"
     },
     "detectors": {
       "js": [

@@ -1,6 +1,31 @@
 # Changelog
 
 
+## v0.2.0
+
+[compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.1.10...v0.2.0)
+
+### 🚀 Enhancements
+
+- Add bootstrap detector ([10e5574](https://github.com/ahmedrangel/vuetracker-analyzer/commit/10e5574))
+
+### 🩹 Fixes
+
+- Inkline html detector ([8587cf5](https://github.com/ahmedrangel/vuetracker-analyzer/commit/8587cf5))
+
+### 🏡 Chore
+
+- Adjust user agent ([aff3ebc](https://github.com/ahmedrangel/vuetracker-analyzer/commit/aff3ebc))
+- ⚠️  Rename boostrap vue icon ([3dc2638](https://github.com/ahmedrangel/vuetracker-analyzer/commit/3dc2638))
+
+#### ⚠️ Breaking Changes
+
+- ⚠️  Rename boostrap vue icon ([3dc2638](https://github.com/ahmedrangel/vuetracker-analyzer/commit/3dc2638))
+
+### ❤️ Contributors
+
+- Ahmed Rangel ([@ahmedrangel](https://github.com/ahmedrangel))
+
 ## v0.1.10
 
 [compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.1.9...v0.1.10)

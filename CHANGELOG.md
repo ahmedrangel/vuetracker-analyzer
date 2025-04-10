@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v0.2.1
+
+[compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.2.0...v0.2.1)
+
+### 🩹 Fixes
+
+- Inkline html detector ([828dca0](https://github.com/ahmedrangel/vuetracker-analyzer/commit/828dca0))
+
+### 🏡 Chore
+
+- Update deps ([50fb407](https://github.com/ahmedrangel/vuetracker-analyzer/commit/50fb407))
+
+### ❤️ Contributors
+
+- Ahmed Rangel ([@ahmedrangel](https://github.com/ahmedrangel))
+
 ## v0.2.0
 
 [compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.1.10...v0.2.0)

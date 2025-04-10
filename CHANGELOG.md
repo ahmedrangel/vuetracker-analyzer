@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.2.2
+
+[compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.2.1...v0.2.2)
+
+### 🏡 Chore
+
+- Update primevue url ([5b6348b](https://github.com/ahmedrangel/vuetracker-analyzer/commit/5b6348b))
+
+### ❤️ Contributors
+
+- Ahmed Rangel ([@ahmedrangel](https://github.com/ahmedrangel))
+
 ## v0.2.1
 
 [compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.2.0...v0.2.1)

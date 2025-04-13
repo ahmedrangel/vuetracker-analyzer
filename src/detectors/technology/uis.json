@@ -91,7 +91,7 @@
       "url": "https://inkline.io/"
     },
     "detectors": {
-      "html": "<(?:div|button|a) [^>]*class=\"[^\"]*(\\b(_border-|_rounded|_rounded-|_clearfix|_background-|_display-|_float-|_overflow-|_overlay-|_position-|_width-|_margin-|_padding-|_align-|_visibility-)\\b)"
+      "html": "<(?:div|button|a) [^>]*class=\"[^\"]*(?<!_)\\b(_border-|_rounded|_rounded-|_clearfix|_background-|_display-|_embed|_float-|_overflow-|_overlay|_position-|_width-|_margin-|_padding-|_align-|_visibility-)\\b"
     }
   },
   "chakra-ui": {

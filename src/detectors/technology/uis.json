@@ -190,7 +190,7 @@
     "detectors": {
       "html": [
         "<link [^>]*href=\"[^\"]+bootstrap(?:\\.min)?\\.css",
-        "<script [^>]*src=\"[^\"]+bootstrap(?:\\.min)?\\.js"
+        "<script [^>]*src=\"[^\"]+bootstrap.min\\.js"
       ],
       "js": "[...document.styleSheets].map(s => [...s.cssRules].some(r => r.selectorText?.includes(':root') && r.cssText.includes('--bs-'))).some(v => v)"
     }

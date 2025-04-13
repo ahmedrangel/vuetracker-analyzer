@@ -1,6 +1,24 @@
 # Changelog
 
 
+## v0.2.3
+
+[compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.2.2...v0.2.3)
+
+### 🩹 Fixes
+
+- Bootstrap html script detector ([f33f4f7](https://github.com/ahmedrangel/vuetracker-analyzer/commit/f33f4f7))
+
+### 🏡 Chore
+
+- Update lock ([16411df](https://github.com/ahmedrangel/vuetracker-analyzer/commit/16411df))
+- Adjust bootstrap icon ([62ca299](https://github.com/ahmedrangel/vuetracker-analyzer/commit/62ca299))
+- Adjust inkline detector ([05edc6c](https://github.com/ahmedrangel/vuetracker-analyzer/commit/05edc6c))
+
+### ❤️ Contributors
+
+- Ahmed Rangel ([@ahmedrangel](https://github.com/ahmedrangel))
+
 ## v0.2.2
 
 [compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.2.1...v0.2.2)

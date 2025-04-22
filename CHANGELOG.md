@@ -1,6 +1,23 @@
 # Changelog
 
 
+## v0.2.4
+
+[compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.2.3...v0.2.4)
+
+### 🩹 Fixes
+
+- **bootstrap:** Js detector ([aeeec67](https://github.com/ahmedrangel/vuetracker-analyzer/commit/aeeec67))
+
+### 🏡 Chore
+
+- **release:** V0.2.3 ([0b8ccd4](https://github.com/ahmedrangel/vuetracker-analyzer/commit/0b8ccd4))
+- Update deps ([fe8121d](https://github.com/ahmedrangel/vuetracker-analyzer/commit/fe8121d))
+
+### ❤️ Contributors
+
+- Ahmed Rangel <ahmedrangel@outlook.com>
+
 ## v0.2.3
 
 [compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.2.2...v0.2.3)

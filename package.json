@@ -54,21 +54,21 @@
   },
   "dependencies": {
     "consola": "^3.4.2",
-    "puppeteer": "^24.6.1",
+    "puppeteer": "^24.7.0",
     "tld-extract": "^2.1.0"
   },
   "devDependencies": {
     "@eslint/compat": "^1.2.8",
     "@stylistic/eslint-plugin": "^4.2.0",
-    "@types/node": "^22.14.0",
-    "@typescript-eslint/eslint-plugin": "^8.29.1",
-    "@typescript-eslint/parser": "^8.29.1",
+    "@types/node": "^22.14.1",
+    "@typescript-eslint/eslint-plugin": "^8.31.0",
+    "@typescript-eslint/parser": "^8.31.0",
     "changelogen": "^0.6.1",
-    "eslint": "^9.24.0",
-    "eslint-import-resolver-typescript": "^4.3.2",
+    "eslint": "^9.25.1",
+    "eslint-import-resolver-typescript": "^4.3.4",
     "eslint-plugin-import": "^2.31.0",
     "typescript": "^5.8.3",
     "unbuild": "^3.5.0"
   },
-  "packageManager": "pnpm@10.8.0"
+  "packageManager": "pnpm@10.9.0"
 }

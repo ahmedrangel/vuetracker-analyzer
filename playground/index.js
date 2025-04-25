@@ -2,6 +2,7 @@ import { createServer } from "http";
 import { createServerAdapter } from "@whatwg-node/server";
 import { AutoRouter } from "itty-router";
 import { analyze } from "vuetracker-analyzer";
+import consola from "consola";
 
 const router = AutoRouter();
 
@@ -21,4 +22,4 @@ router.all("*", () =>
 const ittyServer = createServerAdapter(router.fetch);
 const httpServer = createServer(ittyServer);
 httpServer.listen(2082);
-console.log("Server running at http://localhost:2082/");
+consola.info("Server running at http://localhost:2082/");

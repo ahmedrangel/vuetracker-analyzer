@@ -1,6 +1,24 @@
 # Changelog
 
 
+## v0.2.5
+
+[compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.2.4...v0.2.5)
+
+### 🚀 Enhancements
+
+- Add astro framework detector ([efeed57](https://github.com/ahmedrangel/vuetracker-analyzer/commit/efeed57))
+
+### 🏡 Chore
+
+- **playground:** Add log ([5b2241a](https://github.com/ahmedrangel/vuetracker-analyzer/commit/5b2241a))
+- **playground:** Use consola ([0b31070](https://github.com/ahmedrangel/vuetracker-analyzer/commit/0b31070))
+- Update deps ([ad9565c](https://github.com/ahmedrangel/vuetracker-analyzer/commit/ad9565c))
+
+### ❤️ Contributors
+
+- Ahmed Rangel ([@ahmedrangel](https://github.com/ahmedrangel))
+
 ## v0.2.4
 
 [compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.2.3...v0.2.4)

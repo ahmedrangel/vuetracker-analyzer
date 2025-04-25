@@ -201,6 +201,13 @@ export async function analyze (originalUrl: string, options: { browserWSEndpoint
       infos.hasSSR = meta.ssr;
       infos.frameworkModules = modules?.sort((a, b) => a.name.localeCompare(b.name));
     }
+    // Get Astro version if using Astro
+    else if (infos.framework && infos.framework.slug === "astro") {
+      infos.framework.version = await page.evaluate("document.querySelector('meta[name=\"generator\"]')?.getAttribute('content')") as string;
+      if (infos.framework.version && infos.framework.version.includes("Astro")) {
+        infos.framework.version = infos.framework.version.replace("Astro v", "");
+      }
+    }
 
     await page.close();
     consola.success(`Done analyzing ${originalUrl}`);

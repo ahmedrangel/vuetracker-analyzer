@@ -101,5 +101,26 @@
         "<canvas [^>]*data-tres=\"tresjs.[0-9].[0-9].[0-9]"
       ]
     }
+  },
+  "astro": {
+    "metas": {
+      "slug": "astro",
+      "name": "Astro",
+      "icon": "astro",
+      "url": "https://astro.build"
+    },
+    "detectors": {
+      "html": [
+        "<astro-island [^>]*",
+        "<astro-slot [^>]*",
+        "<meta name=\"generator\" content=\"Astro v[0-9].[0-9].[0-9]\""
+      ],
+      "js": [
+        "[...document.querySelectorAll('*')].map(el => [...el.attributes].some(attr => attr.name.includes('data-astro-cid'))).includes(true)"
+      ],
+      "script": [
+        "/_astro/"
+      ]
+    }
   }
 }

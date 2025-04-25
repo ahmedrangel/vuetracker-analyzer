@@ -21,3 +21,4 @@ router.all("*", () =>
 const ittyServer = createServerAdapter(router.fetch);
 const httpServer = createServer(ittyServer);
 httpServer.listen(2082);
+console.log("Server running at http://localhost:2082/");

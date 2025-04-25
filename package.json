@@ -54,13 +54,13 @@
   },
   "dependencies": {
     "consola": "^3.4.2",
-    "puppeteer": "^24.7.0",
+    "puppeteer": "^24.7.2",
     "tld-extract": "^2.1.0"
   },
   "devDependencies": {
     "@eslint/compat": "^1.2.8",
     "@stylistic/eslint-plugin": "^4.2.0",
-    "@types/node": "^22.14.1",
+    "@types/node": "^22.15.2",
     "@typescript-eslint/eslint-plugin": "^8.31.0",
     "@typescript-eslint/parser": "^8.31.0",
     "changelogen": "^0.6.1",

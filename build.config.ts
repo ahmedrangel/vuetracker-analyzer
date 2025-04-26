@@ -4,6 +4,7 @@ export default defineBuildConfig({
   declaration: true,
   entries: [
     "./src/index",
+    "./src/tools",
     {
       input: "src/icons/",
       outDir: "dist/icons",

@@ -1,13 +1,11 @@
-import { URL } from "url";
+import { URL } from "node:url";
 import puppeteer, { type Browser, type ConnectOptions, type HTTPResponse } from "puppeteer";
 import tldParser from "tld-extract";
 import { consola } from "consola";
 import pkg from "../package.json" with { type: "json" };
 import { ERROR_CODES, isCrawlable, puppeteerArgs, puppeteerViewport } from "./utils";
-import { getFramework, getNuxtMeta, getNuxtModules, getPlugins, getUI, getVueMeta, hasVue } from "./detectors";
+import { getFramework, getNuxtMeta, getNuxtModules, getPlugins, getUI, getVueMeta, hasVue } from "./tools";
 import type { SiteInfo } from "./types";
-
-export * from "./detectors";
 
 let browser: Browser | null = null;
 

@@ -20,8 +20,12 @@
   "license": "GPL-3.0",
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
+      "types": "./dist/index.d.mts",
       "import": "./dist/index.mjs"
+    },
+    "./tools": {
+      "types": "./dist/tools.d.mts",
+      "default": "./dist/tools.mjs"
     },
     "./detectors/*": {
       "default": "./dist/detectors/*.json"

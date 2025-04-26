@@ -1,6 +1,26 @@
 # Changelog
 
 
+## v0.3.0
+
+[compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.2.6...v0.3.0)
+
+### 🩹 Fixes
+
+- **type:** Generic page evaluate type ([7dbea6c](https://github.com/ahmedrangel/vuetracker-analyzer/commit/7dbea6c))
+
+### 🏡 Chore
+
+- **package:** ⚠️  Separate detectors utils to vuetracker-analyzer/tools ([46d6c94](https://github.com/ahmedrangel/vuetracker-analyzer/commit/46d6c94))
+
+#### ⚠️ Breaking Changes
+
+- **package:** ⚠️  Separate detectors utils to vuetracker-analyzer/tools ([46d6c94](https://github.com/ahmedrangel/vuetracker-analyzer/commit/46d6c94))
+
+### ❤️ Contributors
+
+- Ahmed Rangel ([@ahmedrangel](https://github.com/ahmedrangel))
+
 ## v0.2.6
 
 [compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.2.5...v0.2.6)

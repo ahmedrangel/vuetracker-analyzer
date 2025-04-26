@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.2.6
+
+[compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.2.5...v0.2.6)
+
+### 🚀 Enhancements
+
+- Export detectors utils ([632af66](https://github.com/ahmedrangel/vuetracker-analyzer/commit/632af66))
+
+### ❤️ Contributors
+
+- Ahmed Rangel ([@ahmedrangel](https://github.com/ahmedrangel))
+
 ## v0.2.5
 
 [compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.2.4...v0.2.5)

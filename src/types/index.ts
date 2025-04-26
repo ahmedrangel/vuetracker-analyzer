@@ -46,7 +46,7 @@ export interface DetectorContext {
   originalHtml: string;
   html: string;
   scripts: string[];
-  page: Page;
+  page: Page | { evaluate: (value: string) => Promise<unknown> };
   headers?: Record<string, string>;
 }
 

@@ -7,6 +7,8 @@ import { ERROR_CODES, isCrawlable, puppeteerArgs, puppeteerViewport } from "./ut
 import { getFramework, getNuxtMeta, getNuxtModules, getPlugins, getUI, getVueMeta, hasVue } from "./detectors";
 import type { SiteInfo } from "./types";
 
+export * from "./detectors";
+
 let browser: Browser | null = null;
 
 const puppeteerDefaultArgs = {

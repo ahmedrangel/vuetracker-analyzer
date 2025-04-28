@@ -498,7 +498,7 @@
       "url": "https://ui.nuxt.com"
     },
     "detectors": {
-      "js": "useNuxtApp?.()._appConfig?.ui?.primary || window.__unctx__?.get('nuxt-app')?.use()._appConfig?.ui?.primary"
+      "js": "useNuxtApp?.()._appConfig?.ui?.primary || window.__unctx__?.get('nuxt-app')?.use()._appConfig?.ui?.primary || useNuxtApp?.()._appConfig?.ui?.colors || window.__unctx__?.get('nuxt-app')?.use()._appConfig?.ui?.colors"
     }
   },
   "nuxt-ui-pro": {

@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v0.3.1
+
+[compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.3.0...v0.3.1)
+
+### 🩹 Fixes
+
+- Adjust detector for @nuxt/ui v3 ([f714598](https://github.com/ahmedrangel/vuetracker-analyzer/commit/f714598))
+
+### 🏡 Chore
+
+- Update deps ([a9187c5](https://github.com/ahmedrangel/vuetracker-analyzer/commit/a9187c5))
+
+### ❤️ Contributors
+
+- Ahmed Rangel ([@ahmedrangel](https://github.com/ahmedrangel))
+
 ## v0.3.0
 
 [compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.2.6...v0.3.0)

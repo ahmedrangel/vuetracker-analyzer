@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v0.3.4
+
+[compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.3.3...v0.3.4)
+
+### 🩹 Fixes
+
+- Adjust vue meta detector ([8570ae1](https://github.com/ahmedrangel/vuetracker-analyzer/commit/8570ae1))
+- IsStatis undefined by default ([4ae6d37](https://github.com/ahmedrangel/vuetracker-analyzer/commit/4ae6d37))
+
+### ❤️ Contributors
+
+- Ahmed Rangel ([@ahmedrangel](https://github.com/ahmedrangel))
+
 ## v0.3.3
 
 [compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.3.2...v0.3.3)

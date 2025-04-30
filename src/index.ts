@@ -172,7 +172,7 @@ export async function analyze (originalUrl: string, options: { browserWSEndpoint
 
     // Get Vue version
     if (contextHasVue) {
-      const vueVersionDetector = "window.Vue?.version || [...document.querySelectorAll(\"*\")].map((el) => el.__vue__?.$root?.constructor?.version || el.__vue_app__?.version).filter(Boolean)[0]";
+      const vueVersionDetector = "window?.Vue?.version || [...document.querySelectorAll(\"*\")].map((el) => el?.__vue__?.$root?.constructor?.version || el?.__vue_app__?.version).filter(Boolean)?.[0]";
       const fn = await page.waitForFunction(vueVersionDetector, { timeout: 20000 });
       const version = await fn.jsonValue() as string;
       if (version) infos.vueVersion = version;
@@ -193,7 +193,7 @@ export async function analyze (originalUrl: string, options: { browserWSEndpoint
         getNuxtMeta(context),
         getNuxtModules(context)
       ]);
-      infos.framework.version = await page.evaluate("window.__unctx__?.get('nuxt-app')?.use()?.versions?.nuxt") as string;
+      infos.framework.version = await page.evaluate("window?.__unctx__?.get('nuxt-app')?.use()?.versions?.nuxt") as string;
       if (!infos.framework.version && infos.vueVersion) {
         infos.framework.version = infos.vueVersion.split(".")[0];
       }

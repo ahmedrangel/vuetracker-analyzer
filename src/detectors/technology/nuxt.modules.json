@@ -7,7 +7,7 @@
       "url": "https://axios.nuxtjs.org"
     },
     "detectors": {
-      "js": "window.$nuxt?.$options?.context?.app?.$axios"
+      "js": "window?.$nuxt?.$options?.context?.app?.$axios"
     }
   },
   "@nuxt/http": {
@@ -18,7 +18,7 @@
       "url": "https://http.nuxtjs.org"
     },
     "detectors": {
-      "js": "window.$nuxt?.$options?.context?.app?.$http"
+      "js": "window?.$nuxt?.$options?.context?.app?.$http"
     }
   },
   "@nuxtjs/pwa": {
@@ -29,7 +29,7 @@
       "url": "https://pwa.nuxtjs.org"
     },
     "detectors": {
-      "js": "window.$nuxt?.$options?.context?.app?.$icon"
+      "js": "window?.$nuxt?.$options?.context?.app?.$icon"
     }
   },
   "@nuxtjs/apollo": {
@@ -40,7 +40,7 @@
       "url": "https://github.com/nuxt-modules/apollo"
     },
     "detectors": {
-      "js": "window.$nuxt?.$options?.context?.app?.$apolloHelpers || window.__unctx__?.get('nuxt-app')?.use()?.$apolloHelpers"
+      "js": "window?.$nuxt?.$options?.context?.app?.$apolloHelpers || window?.__unctx__?.get('nuxt-app')?.use()?.$apolloHelpers"
     }
   },
   "@nuxtjs/auth": {
@@ -51,7 +51,7 @@
       "url": "https://auth.nuxtjs.org"
     },
     "detectors": {
-      "js": "window.$nuxt?.$options?.context?.app?.$auth && window.$nuxt.$options.context.app.$auth.loginWith"
+      "js": "window?.$nuxt?.$options?.context?.app?.$auth && window?.$nuxt?.$options?.context?.app?.$auth?.loginWith"
     }
   },
   "@nuxtjs/sentry": {
@@ -62,7 +62,7 @@
       "url": "https://sentry.nuxtjs.org/"
     },
     "detectors": {
-      "js": "window.$nuxt?.$options?.context?.app?.$sentry"
+      "js": "window?.$nuxt?.$options?.context?.app?.$sentry"
     }
   },
   "@nuxtjs/vuetify": {
@@ -73,7 +73,7 @@
       "url": "https://github.com/nuxt-community/vuetify-module"
     },
     "detectors": {
-      "js": "window.$nuxt?.$options?.context?.app?.vuetify"
+      "js": "window?.$nuxt?.$options?.context?.app?.vuetify"
     }
   },
   "@nuxtjs/device": {
@@ -84,7 +84,7 @@
       "url": "https://github.com/nuxt-modules/device"
     },
     "detectors": {
-      "js": "window.$nuxt?.$options?.context?.app?.$device || window.__unctx__?.get('nuxt-app')?.use()?.$device"
+      "js": "window?.$nuxt?.$options?.context?.app?.$device || window?.__unctx__?.get('nuxt-app')?.use()?.$device"
     }
   },
   "@nuxtjs/firebase": {
@@ -95,7 +95,7 @@
       "url": "https://firebase.nuxtjs.org"
     },
     "detectors": {
-      "js": "window.$nuxt?.$options?.context?.app && (window.$nuxt.$options.context.app.$fireAuth || window.$nuxt.$options.context.app.$fireDb || window.$nuxt.$options.context.app.$fireStore || window.$nuxt.$options.context.app.$fireStorage || window.$nuxt.$options.context.app.$fireFunc || window.$nuxt.$options.context.app.$fireMess || window.$nuxt.$options.context.app.$firePerf || window.$nuxt.$options.context.app.$fireAnalytics || window.$nuxt.$options.context.app.$fireConfig)"
+      "js": "window?.$nuxt?.$options?.context?.app && (window?.$nuxt?.$options?.context?.app?.$fireAuth || window?.$nuxt?.$options?.context?.app?.$fireDb || window?.$nuxt?.$options?.context?.app?.$fireStore || window?.$nuxt?.$options?.context?.app?.$fireStorage || window?.$nuxt?.$options?.context?.app?.$fireFunc || window?.$nuxt?.$options?.context?.app?.$fireMess || window?.$nuxt?.$options?.context?.app?.$firePerf || window?.$nuxt?.$options?.context?.app?.$fireAnalytics || window?.$nuxt?.$options?.context?.app?.$fireConfig)"
     }
   },
   "nuxt-user-agent": {
@@ -106,7 +106,7 @@
       "url": "https://github.com/fukuiretu/nuxt-user-agent"
     },
     "detectors": {
-      "js": "window.$nuxt?.$options?.context?.app?.$ua"
+      "js": "window?.$nuxt?.$options?.context?.app?.$ua"
     }
   },
   "nuxt-shopify": {
@@ -117,7 +117,7 @@
       "url": "https://github.com/Gomah/nuxt-shopify"
     },
     "detectors": {
-      "js": "window.$nuxt?.$options?.context?.app?.$shopify"
+      "js": "window?.$nuxt?.$options?.context?.app?.$shopify"
     }
   },
   "@nuxtjs/recaptcha": {
@@ -128,7 +128,7 @@
       "url": "https://github.com/nuxt-community/recaptcha-module"
     },
     "detectors": {
-      "js": "window.$nuxt?.$options?.context?.app?.$recaptcha"
+      "js": "window?.$nuxt?.$options?.context?.app?.$recaptcha"
     }
   },
   "@nuxtjs/google-gtag": {
@@ -139,7 +139,7 @@
       "url": "https://github.com/nuxt-community/google-gtag"
     },
     "detectors": {
-      "js": "window.$nuxt?.$options?.context?.app?.$gtag"
+      "js": "window?.$nuxt?.$options?.context?.app?.$gtag"
     }
   },
   "@nuxtjs/google-analytics": {
@@ -150,7 +150,7 @@
       "url": "https://google-analytics.nuxtjs.org"
     },
     "detectors": {
-      "js": "window.$nuxt?.$options?.context?.app?.$ga"
+      "js": "window?.$nuxt?.$options?.context?.app?.$ga"
     }
   },
   "@nuxtjs/google-tag-manager": {
@@ -161,7 +161,7 @@
       "url": "https://github.com/nuxt-community/gtm-module"
     },
     "detectors": {
-      "js": "window.$nuxt?.$options?.context?.app?.$gtm"
+      "js": "window?.$nuxt?.$options?.context?.app?.$gtm"
     }
   },
   "nuxt-matomo": {
@@ -172,7 +172,7 @@
       "url": "https://github.com/pimlie/nuxt-matomo"
     },
     "detectors": {
-      "js": "window.$nuxt?.$options?.context?.app?.$matomo"
+      "js": "window?.$nuxt?.$options?.context?.app?.$matomo"
     }
   },
   "cookie-universal-nuxt": {
@@ -183,7 +183,7 @@
       "url": "https://github.com/microcipcip/cookie-universal/tree/master/packages/cookie-universal-nuxt"
     },
     "detectors": {
-      "js": "window.$nuxt?.$options?.context?.app?.$cookies?.nodeCookie"
+      "js": "window?.$nuxt?.$options?.context?.app?.$cookies?.nodeCookie"
     }
   },
   "nuxt-socket-io": {
@@ -194,7 +194,7 @@
       "url": "https://github.com/richardeschloss/nuxt-socket-io"
     },
     "detectors": {
-      "js": "window.$nuxt?.$options?.context?.app?.$nuxtSocket || window.__unctx__?.get('nuxt-app')?.use()?.$nuxtSocket"
+      "js": "window?.$nuxt?.$options?.context?.app?.$nuxtSocket || window?.__unctx__?.get('nuxt-app')?.use()?.$nuxtSocket"
     }
   },
   "nuxt-facebook-pixel-module": {
@@ -205,7 +205,7 @@
       "url": "https://github.com/WilliamDASILVA/nuxt-facebook-pixel-module"
     },
     "detectors": {
-      "js": "window.$nuxt?.$options?.context?.app?.$fb"
+      "js": "window?.$nuxt?.$options?.context?.app?.$fb"
     }
   },
   "nuxt-rollbar-module": {
@@ -216,7 +216,7 @@
       "url": "https://github.com/gaelreyrol/nuxt-rollbar-module"
     },
     "detectors": {
-      "js": "window.$nuxt?.$options?.context?.app?.$rollbar"
+      "js": "window?.$nuxt?.$options?.context?.app?.$rollbar"
     }
   },
   "@nuxtjs/dayjs": {
@@ -227,7 +227,7 @@
       "url": "https://github.com/nuxt-community/dayjs-module"
     },
     "detectors": {
-      "js": "window.$nuxt?.$options?.context?.app?.$dayjs"
+      "js": "window?.$nuxt?.$options?.context?.app?.$dayjs"
     }
   },
   "@nuxtjs/date-fns": {
@@ -238,7 +238,7 @@
       "url": "https://github.com/nuxt-community/date-fns-module"
     },
     "detectors": {
-      "js": "window.$nuxt?.$options?.context?.app?.$dateFns"
+      "js": "window?.$nuxt?.$options?.context?.app?.$dateFns"
     }
   },
   "@nuxtjs/moment": {
@@ -249,7 +249,7 @@
       "url": "https://github.com/nuxt-community/moment-module"
     },
     "detectors": {
-      "js": "window.$nuxt?.$options?.context?.app?.$moment"
+      "js": "window?.$nuxt?.$options?.context?.app?.$moment"
     }
   },
   "@nuxtjs/universal-storage": {
@@ -260,7 +260,7 @@
       "url": "https://github.com/nuxt-community/universal-storage-module"
     },
     "detectors": {
-      "js": "window.$nuxt?.$options?.context?.app?.$storage"
+      "js": "window?.$nuxt?.$options?.context?.app?.$storage"
     }
   },
   "@nuxtjs/prismic": {
@@ -271,7 +271,7 @@
       "url": "https://prismic.nuxtjs.org"
     },
     "detectors": {
-      "js": "window.$nuxt?.$options?.context?.app?.$prismic || (window.__NUXT__?.config?.public && window.__NUXT__.config.public['@nuxtjs/prismic']) || window.__unctx__?.get('nuxt-app')?.use()?.$prismic"
+      "js": "window?.$nuxt?.$options?.context?.app?.$prismic || (window?.__NUXT__?.config?.public && window?.__NUXT__?.config?.public?.['@nuxtjs/prismic']) || window?.__unctx__?.get('nuxt-app')?.use()?.$prismic"
     }
   },
   "storyblok-nuxt": {
@@ -282,7 +282,7 @@
       "url": "https://github.com/storyblok/storyblok-nuxt"
     },
     "detectors": {
-      "js": "window.$nuxt?.$options?.context?.app?.$storyapi || window.__NUXT__?.config?.public?.storyblok"
+      "js": "window?.$nuxt?.$options?.context?.app?.$storyapi || window?.__NUXT__?.config?.public?.storyblok"
     }
   },
   "nuxt-sanity": {
@@ -293,7 +293,7 @@
       "url": "https://sanity.nuxtjs.org"
     },
     "detectors": {
-      "js": "window.$nuxt?.$options?.context?.app?.$sanity || window.__NUXT__?.config?.public?.sanity || window.__unctx__?.get('nuxt-app')?.use()?.$sanity"
+      "js": "window?.$nuxt?.$options?.context?.app?.$sanity || window?.__NUXT__?.config?.public?.sanity || window?.__unctx__?.get('nuxt-app')?.use()?.$sanity"
     }
   },
   "@nuxt/content": {
@@ -304,7 +304,7 @@
       "url": "https://content.nuxt.com"
     },
     "detectors": {
-      "js": "window.$nuxt?.$options?.context?.app?.$content || window.__NUXT__?.config?.public?.content"
+      "js": "window?.$nuxt?.$options?.context?.app?.$content || window?.__NUXT__?.config?.public?.content"
     }
   },
   "@nuxtjs/color-mode": {
@@ -315,7 +315,7 @@
       "url": "https://color-mode.nuxtjs.org"
     },
     "detectors": {
-      "js": "window.$nuxt?.$options?.context?.app?.$colorMode || window.$nuxt?.$colorMode || (window.__NUXT__?.state && window.__NUXT__?.state['color-mode']) || window.__NUXT_COLOR_MODE__ || window.__unctx__?.get('nuxt-app')?.use()?.$colorMode"
+      "js": "window?.$nuxt?.$options?.context?.app?.$colorMode || window?.$nuxt?.$colorMode || (window?.__NUXT__?.state && window?.__NUXT__?.state?.['color-mode']) || window?.__NUXT_COLOR_MODE__ || window?.__unctx__?.get('nuxt-app')?.use()?.$colorMode"
     }
   },
   "nuxt-ackee": {
@@ -326,7 +326,7 @@
       "url": "https://github.com/bdrtsky/nuxt-ackee"
     },
     "detectors": {
-      "js": "window.$nuxt?.$options?.context?.app?.$ackee || window.$nuxt?.$ackee"
+      "js": "window?.$nuxt?.$options?.context?.app?.$ackee || window?.$nuxt?.$ackee"
     }
   },
   "@nuxtjs/strapi": {
@@ -337,7 +337,7 @@
       "url": "https://strapi.nuxtjs.org"
     },
     "detectors": {
-      "js": "window.$nuxt?.$options?.context?.app?.$strapi || window.__NUXT__?.config?.public?.strapi"
+      "js": "window?.$nuxt?.$options?.context?.app?.$strapi || window?.__NUXT__?.config?.public?.strapi"
     }
   },
   "@nuxtjs/supabase": {
@@ -348,7 +348,7 @@
       "url": "https://supabase.nuxtjs.org"
     },
     "detectors": {
-      "js": "window.$nuxt?.$supabase || window.__NUXT__?.config?.public?.supabase || window.__unctx__?.get('nuxt-app')?.use()?.$supabase"
+      "js": "window?.$nuxt?.$supabase || window?.__NUXT__?.config?.public?.supabase || window?.__unctx__?.get('nuxt-app')?.use()?.$supabase"
     }
   },
   "nuxt-i18n": {
@@ -359,7 +359,7 @@
       "url": "https://i18n.nuxtjs.org"
     },
     "detectors": {
-      "js": "window.$nuxt?.$nuxtI18nSeo"
+      "js": "window?.$nuxt?.$nuxtI18nSeo"
     }
   },
   "@nuxtjs/i18n": {
@@ -370,7 +370,7 @@
       "url": "https://i18n.nuxtjs.org"
     },
     "detectors": {
-      "js": "window.$nuxt?.$i18n || window.__unctx__?.get('nuxt-app')?.use()?.$i18n"
+      "js": "window?.$nuxt?.$i18n || window?.__unctx__?.get('nuxt-app')?.use()?.$i18n"
     }
   },
   "nuxt-image": {
@@ -383,11 +383,11 @@
     "detectors": {
       "html": "data-nuxt-img",
       "js": [
-        "window.$nuxt?.$img",
-        "window.__NUXT__?.config?.public?.image",
-        "window.__unctx__?.get('nuxt-app')?.use()?.$img",
-        "[...document.querySelectorAll('*')].map((el) => el.__vue_app__?.config?.globalProperties?.$img).filter(Boolean).length",
-        "useNuxtApp?.()._img"
+        "window?.$nuxt?.$img",
+        "window?.__NUXT__?.config?.public?.image",
+        "window?.__unctx__?.get('nuxt-app')?.use()?.$img",
+        "[...document.querySelectorAll('*')].map((el) => el?.__vue_app__?.config?.globalProperties?.$img).filter(Boolean).length",
+        "useNuxtApp?.()?._img"
       ]
     }
   },
@@ -399,7 +399,7 @@
       "url": "https://cloudinary.nuxtjs.org"
     },
     "detectors": {
-      "js": "window.$nuxt?.$cloudinary"
+      "js": "window?.$nuxt?.$cloudinary"
     }
   },
   "docus": {
@@ -410,7 +410,7 @@
       "url": "https://docus.dev"
     },
     "detectors": {
-      "js": "window.$nuxt?.$docus || window.__NUXT__?.config?.public?.docus || window.__unctx__?.get('nuxt-app')?.use()?._appConfig?.docus"
+      "js": "window?.$nuxt?.$docus || window?.__NUXT__?.config?.public?.docus || window?.__unctx__?.get('nuxt-app')?.use()?._appConfig?.docus"
     }
   },
   "druxt": {
@@ -421,7 +421,7 @@
       "url": "https://druxtjs.org"
     },
     "detectors": {
-      "js": "window.$nuxt?.$druxt"
+      "js": "window?.$nuxt?.$druxt"
     }
   },
   "vuestorefront": {
@@ -443,7 +443,7 @@
       "url": "https://github.com/TYPO3-Initiatives/nuxt-typo3"
     },
     "detectors": {
-      "js": "window.$nuxt?.$typo3 || window.__NUXT__?.config?.public?.typo3 || window.__unctx__?.get('nuxt-app')?.use()?.$typo3"
+      "js": "window?.$nuxt?.$typo3 || window?.__NUXT__?.config?.public?.typo3 || window?.__unctx__?.get('nuxt-app')?.use()?.$typo3"
     }
   },
   "nuxt-booster": {
@@ -454,7 +454,7 @@
       "url": "https://basics.github.io/nuxt-booster"
     },
     "detectors": {
-      "js": "window.__NUXT__?.config?.public?.booster || window.__unctx__?.get('nuxt-app')?.use()?.$booster"
+      "js": "window?.__NUXT__?.config?.public?.booster || window?.__unctx__?.get('nuxt-app')?.use()?.$booster"
     }
   },
   "nuxt-custom-elements": {
@@ -465,7 +465,7 @@
       "url": "https://nuxt-custom-elements.grabarzundpartner.dev"
     },
     "detectors": {
-      "js": "window.$nuxt?.$customElements"
+      "js": "window?.$nuxt?.$customElements"
     }
   },
   "@nuxtjs/algolia": {
@@ -476,7 +476,7 @@
       "url": "https://algolia.nuxtjs.org"
     },
     "detectors": {
-      "js": "window.$nuxt?.$algolia || window.__NUXT__?.config?.public?.algolia || window.__unctx__?.get('nuxt-app')?.use()?.$algolia"
+      "js": "window?.$nuxt?.$algolia || window?.__NUXT__?.config?.public?.algolia || window?.__unctx__?.get('nuxt-app')?.use()?.$algolia"
     }
   },
   "nuxt-directus": {
@@ -487,7 +487,7 @@
       "url": "https://nuxt-directus.netlify.app/"
     },
     "detectors": {
-      "js": "window.__NUXT__?.config?.public?.directus"
+      "js": "window?.__NUXT__?.config?.public?.directus"
     }
   },
   "nuxt-ui": {
@@ -498,7 +498,7 @@
       "url": "https://ui.nuxt.com"
     },
     "detectors": {
-      "js": "useNuxtApp?.()._appConfig?.ui?.primary || window.__unctx__?.get('nuxt-app')?.use()._appConfig?.ui?.primary || useNuxtApp?.()._appConfig?.ui?.colors || window.__unctx__?.get('nuxt-app')?.use()._appConfig?.ui?.colors"
+      "js": "useNuxtApp?.()?._appConfig?.ui?.primary || window?.__unctx__?.get('nuxt-app')?.use()?._appConfig?.ui?.primary || useNuxtApp?.()?._appConfig?.ui?.colors || window?.__unctx__?.get('nuxt-app')?.use()?._appConfig?.ui?.colors"
     }
   },
   "nuxt-ui-pro": {
@@ -509,7 +509,7 @@
       "url": "https://ui.nuxt.com/pro"
     },
     "detectors": {
-      "js": "useNuxtApp?.()._appConfig?.ui?.variables || window.__unctx__?.get('nuxt-app')?.use()._appConfig?.ui?.variables"
+      "js": "useNuxtApp?.()?._appConfig?.ui?.variables || window?.__unctx__?.get('nuxt-app')?.use()?._appConfig?.ui?.variables"
     }
   },
   "nuxt-mdc": {
@@ -520,7 +520,7 @@
       "url": "https://github.com/nuxt-modules/mdc"
     },
     "detectors": {
-      "js": "useNuxtApp?.().payload?.config?.public?.mdc || window.__unctx__?.get('nuxt-app')?.use().payload?.config?.public?.mdc"
+      "js": "useNuxtApp?.().payload?.config?.public?.mdc || window?.__unctx__?.get('nuxt-app')?.use()?.payload?.config?.public?.mdc"
     }
   },
   "nuxt-studio": {
@@ -531,7 +531,7 @@
       "url": "https://nuxt.studio"
     },
     "detectors": {
-      "js": "useNuxtApp?.().payload?.config?.public?.studio || window.__unctx__?.get('nuxt-app')?.use().payload?.config?.public?.studio"
+      "js": "useNuxtApp?.()?.payload?.config?.public?.studio || window?.__unctx__?.get('nuxt-app')?.use()?.payload?.config?.public?.studio"
     }
   },
   "nuxt-plausible": {
@@ -542,7 +542,7 @@
       "url": "https://github.com/nuxt-modules/plausible"
     },
     "detectors": {
-      "js": "useNuxtApp?.().payload?.config?.public?.plausible || window.__unctx__?.get('nuxt-app')?.use().payload?.config?.public?.plausible"
+      "js": "useNuxtApp?.()?.payload?.config?.public?.plausible || window?.__unctx__?.get('nuxt-app')?.use()?.payload?.config?.public?.plausible"
     }
   },
   "nuxt-auth-utils": {
@@ -553,7 +553,7 @@
       "url": "https://github.com/atinux/nuxt-auth-utils"
     },
     "detectors": {
-      "js": "(useNuxtApp?.().payload?.state && useNuxtApp?.().payload?.state?.['$snuxt-auth-ready'] && useNuxtApp?.().payload?.state?.['$snuxt-session']) || (window.__NUXT__?.state && window.__NUXT__?.state?.['$snuxt-auth-ready'] && window.__NUXT__?.state?.['$snuxt-session'])"
+      "js": "(useNuxtApp?.()?.payload?.state && useNuxtApp?.()?.payload?.state?.['$snuxt-auth-ready'] && useNuxtApp?.()?.payload?.state?.['$snuxt-session']) || (window?.__NUXT__?.state && window?.__NUXT__?.state?.['$snuxt-auth-ready'] && window?.__NUXT__?.state?.['$snuxt-session'])"
     }
   },
   "@nuxt/scripts": {
@@ -564,7 +564,7 @@
       "url": "https://scripts.nuxt.com"
     },
     "detectors": {
-      "js": "useNuxtApp?.().payload?.config?.public?.['nuxt-scripts'] || window.__unctx__?.get('nuxt-app')?.use().payload?.config?.public?.['nuxt-scripts'] || window.__NUXT__?.config?.public?.['nuxt-scripts']"
+      "js": "useNuxtApp?.()?.payload?.config?.public?.['nuxt-scripts'] || window?.__unctx__?.get('nuxt-app')?.use()?.payload?.config?.public?.['nuxt-scripts'] || window?.__NUXT__?.config?.public?.['nuxt-scripts']"
     }
   },
   "@nuxt/icon": {
@@ -575,7 +575,7 @@
       "url": "https://github.com/nuxt/icon"
     },
     "detectors": {
-      "js": "useNuxtApp?.()._appConfig?.icon?.provider || window.__unctx__?.get('nuxt-app')?.use()._appConfig?.icon?.provider"
+      "js": "useNuxtApp?.()?._appConfig?.icon?.provider || window?.__unctx__?.get('nuxt-app')?.use()?._appConfig?.icon?.provider"
     }
   },
   "@nuxthub/core": {
@@ -586,7 +586,7 @@
       "url": "https://hub.nuxt.com"
     },
     "detectors": {
-      "js": "useNuxtApp?.().payload?.config?.public?.hub || window.__unctx__?.get('nuxt-app')?.use().payload?.config?.public?.hub || window.__NUXT__?.config?.public?.hub"
+      "js": "useNuxtApp?.()?.payload?.config?.public?.hub || window?.__unctx__?.get('nuxt-app')?.use()?.payload?.config?.public?.hub || window?.__NUXT__?.config?.public?.hub"
     }
   },
   "@nuxtjs/turnstile": {
@@ -597,7 +597,7 @@
       "url": "https://github.com/nuxt-modules/turnstile"
     },
     "detectors": {
-      "js": "useNuxtApp?.().payload?.config?.public?.turnstile || window.__unctx__?.get('nuxt-app')?.use().payload?.config?.public?.turnstile || window.__NUXT__?.config?.public?.turnstile"
+      "js": "useNuxtApp?.()?.payload?.config?.public?.turnstile || window?.__unctx__?.get('nuxt-app')?.use()?.payload?.config?.public?.turnstile || window?.__NUXT__?.config?.public?.turnstile"
     }
   }
 }

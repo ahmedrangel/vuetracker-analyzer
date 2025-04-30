@@ -8,8 +8,8 @@
     },
     "detectors": {
       "js": [
-        "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$options.isOruga)).filter(Boolean).length",
-        "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue_app__?.config?.globalProperties?.$oruga)).filter(Boolean).length"
+        "[...document.querySelectorAll('*')].map((el) => Boolean(el?.__vue__?.$options?.isOruga)).filter(Boolean).length",
+        "[...document.querySelectorAll('*')].map((el) => Boolean(el?.__vue_app__?.config?.globalProperties?.$oruga)).filter(Boolean).length"
       ]
     }
   },
@@ -32,7 +32,7 @@
       "url": "https://vuetifyjs.com/"
     },
     "detectors": {
-      "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$vuetify)).filter(Boolean).length"
+      "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el?.__vue__?.$vuetify)).filter(Boolean).length"
     }
   },
   "bootstrap-vue": {
@@ -43,7 +43,7 @@
       "url": "https://bootstrap-vue.org/"
     },
     "detectors": {
-      "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$bvModal || el.__vue__?.$bvConfig || el.__vue__?.$bvToast)).filter(Boolean).length"
+      "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el?.__vue__?.$bvModal || el?.__vue__?.$bvConfig || el?.__vue__?.$bvToast)).filter(Boolean).length"
     }
   },
   "vue-tailwind": {
@@ -54,7 +54,7 @@
       "url": "https://www.vue-tailwind.com/"
     },
     "detectors": {
-      "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$vueTailwind || (el.__vue__?.$options?.components.TInput && el.__vue__?.$options?.components?.TButton && el.__vue__?.$options?.components?.TModal))).filter(Boolean).length"
+      "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el?.__vue__?.$vueTailwind || (el?.__vue__?.$options?.components?.TInput && el?.__vue__?.$options?.components?.TButton && el?.__vue__?.$options?.components?.TModal))).filter(Boolean).length"
     }
   },
   "tailwindcss": {
@@ -80,7 +80,7 @@
       "url": "https://buefy.org/"
     },
     "detectors": {
-      "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$buefy)).filter(Boolean).length"
+      "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el?.__vue__?.$buefy)).filter(Boolean).length"
     }
   },
   "inkline": {
@@ -103,8 +103,8 @@
     },
     "detectors": {
       "js": [
-        "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$chakra)).filter(Boolean).length",
-        "[...document.querySelectorAll('*')].map((el) => el.__vue_app__?.config?.globalProperties?.$chakraTheme).filter(Boolean).length"
+        "[...document.querySelectorAll('*')].map((el) => Boolean(el?.__vue__?.$chakra)).filter(Boolean).length",
+        "[...document.querySelectorAll('*')].map((el) => el?.__vue_app__?.config?.globalProperties?.$chakraTheme).filter(Boolean).length"
       ]
     }
   },
@@ -117,8 +117,8 @@
     },
     "detectors": {
       "js": [
-        "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$primevue)).filter(Boolean).length",
-        "[...document.querySelectorAll('*')].map((el) => el.__vue_app__?.config?.globalProperties?.$primevue).filter(Boolean).length"
+        "[...document.querySelectorAll('*')].map((el) => Boolean(el?.__vue__?.$primevue)).filter(Boolean).length",
+        "[...document.querySelectorAll('*')].map((el) => el?.__vue_app__?.config?.globalProperties?.$primevue).filter(Boolean).length"
       ]
     }
   },
@@ -130,7 +130,7 @@
       "url": "https://vuesax.com"
     },
     "detectors": {
-      "js": "[...document.querySelectorAll('*')].map((el) => el.__vue__?.$vs?.loading).filter(Boolean).length"
+      "js": "[...document.querySelectorAll('*')].map((el) => el?.__vue__?.$vs?.loading).filter(Boolean).length"
     }
   },
   "iview": {
@@ -141,7 +141,7 @@
       "url": "http://iview.talkingdata.com"
     },
     "detectors": {
-      "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$IVIEW)).filter(Boolean).length"
+      "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el?.__vue__?.$IVIEW)).filter(Boolean).length"
     }
   },
   "vue-material": {
@@ -155,7 +155,7 @@
       "html": [
         "<link [^>]*href=\"[^\"]+vue-material(?:\\.min)?\\.css"
       ],
-      "js": "[...document.querySelectorAll('*')].map((el) => el.__vue__?.$material).filter(Boolean).length"
+      "js": "[...document.querySelectorAll('*')].map((el) => el?.__vue__?.$material).filter(Boolean).length"
     }
   },
   "vulk": {
@@ -166,7 +166,7 @@
       "url": "https://vulk.cssninja.io"
     },
     "detectors": {
-      "js": "[...document.querySelectorAll('*')].map((el) => el.__vue_app__?._context?.provides?.vulk).filter(Boolean).length"
+      "js": "[...document.querySelectorAll('*')].map((el) => el?.__vue_app__?._context?.provides?.vulk).filter(Boolean).length"
     }
   },
   "arco-design": {
@@ -192,7 +192,7 @@
         "<link [^>]*href=\"[^\"]+bootstrap(?:\\.min)?\\.css",
         "<script [^>]*src=\"[^\"]+bootstrap.min\\.js"
       ],
-      "js": "[...document.styleSheets].filter(s => !s.href || s.href.includes(location.origin)).map(s => [...s.cssRules].some(r => r.selectorText?.includes(':root') && r.cssText.includes('--bs-'))).some(v => v)"
+      "js": "[...document?.styleSheets].filter(s => !s?.href || s?.href?.includes(location?.origin)).map(s => [...s?.cssRules].some(r => r?.selectorText?.includes(':root') && r?.cssText?.includes('--bs-'))).some(v => v)"
     }
   }
 }

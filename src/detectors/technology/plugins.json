@@ -8,7 +8,7 @@
     },
     "detectors": {
       "js": [
-        "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.__composition_api_state__)).filter(Boolean).length"
+        "[...document.querySelectorAll('*')].map((el) => Boolean(el?.__vue__?.__composition_api_state__)).filter(Boolean).length"
       ]
     }
   },
@@ -21,9 +21,9 @@
     },
     "detectors": {
       "js": [
-        "window.$nuxt?.$router && window.$nuxt?.$route",
-        "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$router && el.__vue__?.$route)).filter(Boolean).length",
-        "[...document.querySelectorAll('*')].map((el) => el.__vue_app__?.config?.globalProperties?.$router).filter(Boolean).length"
+        "window?.$nuxt?.$router && window?.$nuxt?.$route",
+        "[...document.querySelectorAll('*')].map((el) => Boolean(el?.__vue__?.$router && el?.__vue__?.$route)).filter(Boolean).length",
+        "[...document.querySelectorAll('*')].map((el) => el?.__vue_app__?.config?.globalProperties?.$router).filter(Boolean).length"
       ]
     }
   },
@@ -36,8 +36,8 @@
     },
     "detectors": {
       "js": [
-        "window.$nuxt?.$store?.dispatch && window.$nuxt?.$store?.commit",
-        "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$store?.dispatch && el.__vue__?.$store?.commit)).filter(Boolean).length"
+        "window?.$nuxt?.$store?.dispatch && window?.$nuxt?.$store?.commit",
+        "[...document.querySelectorAll('*')].map((el) => Boolean(el?.__vue__?.$store?.dispatch && el?.__vue__?.$store?.commit)).filter(Boolean).length"
       ]
     }
   },
@@ -50,8 +50,8 @@
     },
     "detectors": {
       "js": [
-        "window.$nuxt?.$meta && window.$nuxt.$meta() && window.$nuxt.$meta().getOptions",
-        "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$meta && el.__vue__.$meta() && el.__vue__.$meta().getOptions)).filter(Boolean).length"
+        "window?.$nuxt?.$meta && window?.$nuxt?.$meta() && window?.$nuxt?.$meta()?.getOptions",
+        "[...document.querySelectorAll('*')].map((el) => Boolean(el?.__vue__?.$meta && el?.__vue__?.$meta() && el?.__vue__?.$meta()?.getOptions)).filter(Boolean).length"
       ]
     }
   },
@@ -63,7 +63,7 @@
       "url": "https://apollo.vuejs.org"
     },
     "detectors": {
-      "js": "window.$nuxt?.$apollo || [...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$apollo)).filter(Boolean).length"
+      "js": "window?.$nuxt?.$apollo || [...document.querySelectorAll('*')].map((el) => Boolean(el?.__vue__?.$apollo)).filter(Boolean).length"
     }
   },
   "vue-warehouse": {
@@ -74,7 +74,7 @@
       "url": "https://marquez.co/docs/vue-warehouse"
     },
     "detectors": {
-      "js": "window.$nuxt?.$warehouse || [...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$warehouse)).filter(Boolean).length"
+      "js": "window?.$nuxt?.$warehouse || [...document.querySelectorAll('*')].map((el) => Boolean(el?.__vue__?.$warehouse)).filter(Boolean).length"
     }
   },
   "vue-i18n": {
@@ -86,8 +86,8 @@
     },
     "detectors": {
       "js": [
-        "[...document.querySelectorAll('*')].map((el) => Boolean(el.__vue__?.$i18n)).filter(Boolean).length",
-        "window.__VUE_I18N_LEGACY_API__ || window.__VUE_I18N_FULL_INSTALL__"
+        "[...document.querySelectorAll('*')].map((el) => Boolean(el?.__vue__?.$i18n)).filter(Boolean).length",
+        "window?.__VUE_I18N_LEGACY_API__ || window?.__VUE_I18N_FULL_INSTALL__"
       ]
     }
   },
@@ -99,7 +99,7 @@
       "url": "https://vueformulate.com/"
     },
     "detectors": {
-      "js": "Boolean([...document.querySelectorAll('*')].find((el) => Boolean(el.__vue__?.$formulate)))"
+      "js": "Boolean([...document.querySelectorAll('*')].find((el) => Boolean(el?.__vue__?.$formulate)))"
     }
   },
   "@inertiajs/inertia-vue": {
@@ -111,8 +111,8 @@
     },
     "detectors": {
       "js": [
-        "Boolean([...document.querySelectorAll('*')].find((el) => Boolean(el.__vue__?.$inertia)))",
-        "[...document.querySelectorAll('*')].map((el) => el.__vue_app__?.config?.globalProperties?.$inertia).filter(Boolean).length"
+        "Boolean([...document.querySelectorAll('*')].find((el) => Boolean(el?.__vue__?.$inertia)))",
+        "[...document.querySelectorAll('*')].map((el) => el?.__vue_app__?.config?.globalProperties?.$inertia).filter(Boolean).length"
       ]
     }
   },
@@ -124,7 +124,7 @@
       "url": "https://vee-validate.logaretm.com/"
     },
     "detectors": {
-      "js": "window.VeeValidate || Boolean([...document.querySelectorAll('*')].find((el) => Boolean(el.__vue__ && ('$_veeObserver' in el.__vue__ || (el.__vue__.$validator && 'attach' in el.__vue__.$validator)) || el.__vueParentComponent && el.__vueParentComponent.provides && Reflect.ownKeys(el.__vueParentComponent.provides).some(i => /vee-validate/i.test(i.description)) )))"
+      "js": "window?.VeeValidate || Boolean([...document.querySelectorAll('*')].find((el) => Boolean(el?.__vue__ && ('$_veeObserver' in el?.__vue__ || (el?.__vue__?.$validator && 'attach' in el?.__vue__?.$validator)) || el?.__vueParentComponent && el?.__vueParentComponent?.provides && Reflect?.ownKeys(el?.__vueParentComponent?.provides)?.some(i => /vee-validate/i?.test(i?.description)) )))"
     }
   },
   "vue-plausible": {
@@ -135,7 +135,7 @@
       "url": "https://github.com/moritzsternemann/vue-plausible"
     },
     "detectors": {
-      "js": "window.Vue?.$plausible || window.$nuxt?.$plausible || Boolean([...document.querySelectorAll('*')].find((el) => Boolean(el.__vue__?.$plausible)))"
+      "js": "window?.Vue?.$plausible || window?.$nuxt?.$plausible || Boolean([...document.querySelectorAll('*')].find((el) => Boolean(el?.__vue__?.$plausible)))"
     }
   },
   "vue-tour": {
@@ -146,7 +146,7 @@
       "url": "https://github.com/pulsardev/vue-tour"
     },
     "detectors": {
-      "js": "window.Vue?.$tours || window.$nuxt?.$tours || Boolean([...document.querySelectorAll('*')].find((el) => Boolean(el.__vue__?.$tours)))"
+      "js": "window?.Vue?.$tours || window?.$nuxt?.$tours || Boolean([...document.querySelectorAll('*')].find((el) => Boolean(el?.__vue__?.$tours)))"
     }
   },
   "pinia": {
@@ -158,7 +158,7 @@
     },
     "detectors": {
       "js": [
-        "[...document.querySelectorAll('*')].filter((el) => el.__vue__?.$pinia || el.__vue_app__?.config?.globalProperties?.$pinia).length"
+        "[...document.querySelectorAll('*')].filter((el) => el?.__vue__?.$pinia || el?.__vue_app__?.config?.globalProperties?.$pinia).length"
       ]
     }
   },
@@ -170,7 +170,7 @@
       "url": "https://harlemjs.com"
     },
     "detectors": {
-      "js": "Boolean(window.$harlem?.createInstance)"
+      "js": "Boolean(window?.$harlem?.createInstance)"
     }
   },
   "@formkit/vue": {
@@ -181,7 +181,7 @@
       "url": "https://formkit.com/"
     },
     "detectors": {
-      "js": "Boolean([...document.querySelectorAll('*')].map((el) => el.__vue_app__).filter((el) => el && el.config && el.config.globalProperties && el.config.globalProperties.$formkit).length)"
+      "js": "Boolean([...document.querySelectorAll('*')].map((el) => el?.__vue_app__).filter((el) => el && el?.config && el?.config.globalProperties && el?.config?.globalProperties?.$formkit).length)"
     }
   }
 }

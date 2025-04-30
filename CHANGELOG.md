@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.3.3
+
+[compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.3.2...v0.3.3)
+
+### 🩹 Fixes
+
+- Missing optional chaining ([0d2d542](https://github.com/ahmedrangel/vuetracker-analyzer/commit/0d2d542))
+
+### ❤️ Contributors
+
+- Ahmed Rangel ([@ahmedrangel](https://github.com/ahmedrangel))
+
 ## v0.3.2
 
 [compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.3.1...v0.3.2)

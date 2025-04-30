@@ -71,7 +71,7 @@ export async function analyze (originalUrl: string, options: { browserWSEndpoint
     },
     vueVersion: null,
     hasSSR: false, // default
-    isStatic: true, // default
+    isStatic: undefined, // default
     framework: null, // nuxt | gridsome | quasar | vuepress | iles
     frameworkModules: [],
     plugins: [], // vue-router, vuex, vue-apollo, etc

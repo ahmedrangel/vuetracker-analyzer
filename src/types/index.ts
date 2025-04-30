@@ -27,7 +27,7 @@ export interface SiteInfo {
   };
   vueVersion: string | null;
   hasSSR: boolean;
-  isStatic: boolean;
+  isStatic?: boolean;
   framework: Technology | null;
   frameworkModules: Technology[];
   plugins: Technology[];

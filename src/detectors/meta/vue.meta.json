@@ -4,6 +4,11 @@
     "html": [
       "data-n-head=\"ssr\"",
       "data-vue-tag=\"ssr\""
+    ],
+    "js": [
+      "document.querySelector('div[data-server-rendered=\"true\"]')",
+      "document.querySelector('meta[data-n-head=\"ssr\"]')",
+      "document.querySelector('meta[data-vue-tag=\"ssr\"]')"
     ]
   }
 }

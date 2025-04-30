@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v0.3.2
+
+[compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.3.1...v0.3.2)
+
+### 🩹 Fixes
+
+- Add optional chainings to avoid uncaught errors ([4b3365a](https://github.com/ahmedrangel/vuetracker-analyzer/commit/4b3365a))
+
+### 🏡 Chore
+
+- Update deps ([6360f75](https://github.com/ahmedrangel/vuetracker-analyzer/commit/6360f75))
+
+### ❤️ Contributors
+
+- Ahmed Rangel ([@ahmedrangel](https://github.com/ahmedrangel))
+
 ## v0.3.1
 
 [compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.3.0...v0.3.1)

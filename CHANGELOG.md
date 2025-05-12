@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v0.3.5
+
+[compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.3.4...v0.3.5)
+
+### 🚀 Enhancements
+
+- Add @scalar/nuxt ([b03b34a](https://github.com/ahmedrangel/vuetracker-analyzer/commit/b03b34a))
+
+### 🏡 Chore
+
+- Add scalar icon ([e74befb](https://github.com/ahmedrangel/vuetracker-analyzer/commit/e74befb))
+
+### ❤️ Contributors
+
+- Ahmed Rangel ([@ahmedrangel](https://github.com/ahmedrangel))
+
 ## v0.3.4
 
 [compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.3.3...v0.3.4)

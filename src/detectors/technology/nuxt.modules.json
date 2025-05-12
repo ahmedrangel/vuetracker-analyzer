@@ -599,5 +599,16 @@
     "detectors": {
       "js": "useNuxtApp?.()?.payload?.config?.public?.turnstile || window?.__unctx__?.get('nuxt-app')?.use()?.payload?.config?.public?.turnstile || window?.__NUXT__?.config?.public?.turnstile"
     }
+  },
+  "@scalar/nuxt": {
+    "metas": {
+      "slug": "@scalar/nuxt",
+      "name": "@scalar/nuxt",
+      "icon": "scalar",
+      "url": "https://github.com/scalar/scalar"
+    },
+    "detectors": {
+      "js": "(document.querySelector('.scalar-api-reference') || document.querySelector('.scalar-app')) && (window?.__NUXT__ || window?.$nuxt || Boolean([...document.querySelectorAll('*')].find((el) => Boolean(el?.__vue_app__?.$nuxt))))"
+    }
   }
 }

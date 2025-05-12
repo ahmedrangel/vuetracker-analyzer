@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.3.6
+
+[compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.3.5...v0.3.6)
+
+### 🏡 Chore
+
+- Update pnpm-lock ([db5a958](https://github.com/ahmedrangel/vuetracker-analyzer/commit/db5a958))
+
+### ❤️ Contributors
+
+- Ahmed Rangel ([@ahmedrangel](https://github.com/ahmedrangel))
+
 ## v0.3.5
 
 [compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.3.4...v0.3.5)

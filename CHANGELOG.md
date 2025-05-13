@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.3.8
+
+[compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.3.7...v0.3.8)
+
+### 🩹 Fixes
+
+- Scalar nuxt slug ([65d8920](https://github.com/ahmedrangel/vuetracker-analyzer/commit/65d8920))
+
+### ❤️ Contributors
+
+- Ahmed Rangel ([@ahmedrangel](https://github.com/ahmedrangel))
+
 ## v0.3.7
 
 [compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.3.6...v0.3.7)

@@ -602,7 +602,7 @@
   },
   "@scalar/nuxt": {
     "metas": {
-      "slug": "@scalar/nuxt",
+      "slug": "scalar-nuxt",
       "name": "@scalar/nuxt",
       "icon": "scalar",
       "url": "https://github.com/scalar/scalar"

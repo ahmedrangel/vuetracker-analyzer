@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.3.7
+
+[compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.3.6...v0.3.7)
+
+### 🏡 Chore
+
+- **icons:** Adjust scalar svg ([3be9507](https://github.com/ahmedrangel/vuetracker-analyzer/commit/3be9507))
+
+### ❤️ Contributors
+
+- Ahmed Rangel ([@ahmedrangel](https://github.com/ahmedrangel))
+
 ## v0.3.6
 
 [compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.3.5...v0.3.6)

@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v0.3.9
+
+[compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.3.8...v0.3.9)
+
+### 🏡 Chore
+
+- Update deps ([9595dad](https://github.com/ahmedrangel/vuetracker-analyzer/commit/9595dad))
+- Set bootstrap ui priority to -1 ([dee07d2](https://github.com/ahmedrangel/vuetracker-analyzer/commit/dee07d2))
+
+### ❤️ Contributors
+
+- Ahmed Rangel ([@ahmedrangel](https://github.com/ahmedrangel))
+
 ## v0.3.8
 
 [compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.3.7...v0.3.8)

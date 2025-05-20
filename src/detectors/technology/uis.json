@@ -193,6 +193,7 @@
         "<script [^>]*src=\"[^\"]+bootstrap.min\\.js"
       ],
       "js": "[...document?.styleSheets].filter(s => !s?.href || s?.href?.includes(location?.origin)).map(s => [...s?.cssRules].some(r => r?.selectorText?.includes(':root') && r?.cssText?.includes('--bs-'))).some(v => v)"
-    }
+    },
+    "priority": -1
   }
 }

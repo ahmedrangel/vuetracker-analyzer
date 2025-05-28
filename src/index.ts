@@ -85,6 +85,14 @@ export async function analyze (originalUrl: string, options: { browserWSEndpoint
       height: 100, // 100 for better performance
       deviceScaleFactor: 1
     });
+    await page.evaluateOnNewDocument(() => {
+      Object.defineProperty(navigator, "webdriver", {
+        get: () => false
+      });
+      Object.defineProperty(navigator, 'plugins', {
+        get: () => [1, 2, 3, 4, 5],
+      });
+    });
     await page.browserContext().setCookie({
       name: "gtm_cookie_consent",
       value: "functional:1|analytics:1|customization:1|advertising:1",

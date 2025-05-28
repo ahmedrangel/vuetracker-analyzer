@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v0.3.10
+
+[compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.3.9...v0.3.10)
+
+### 🩹 Fixes
+
+- Set webdriver false to avoid 403 errors ([99fb7ff](https://github.com/ahmedrangel/vuetracker-analyzer/commit/99fb7ff))
+
+### 🏡 Chore
+
+- Update deps ([6e640c5](https://github.com/ahmedrangel/vuetracker-analyzer/commit/6e640c5))
+
+### ❤️ Contributors
+
+- Ahmed Rangel ([@ahmedrangel](https://github.com/ahmedrangel))
+
 ## v0.3.9
 
 [compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.3.8...v0.3.9)

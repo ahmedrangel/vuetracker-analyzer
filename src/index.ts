@@ -111,7 +111,6 @@ export async function analyze (originalUrl: string, options: { browserWSEndpoint
       response = await page.goto(originalUrl, {
         waitUntil: "domcontentloaded"
       });
-      await new Promise(r => setTimeout(r, 10000));
     }
 
     if (!response?.ok()) {
@@ -180,7 +179,7 @@ export async function analyze (originalUrl: string, options: { browserWSEndpoint
 
     // Get Vue version
     if (contextHasVue) {
-      const vueVersionDetector = "window?.Vue?.version || [...document.querySelectorAll(\"*\")].map((el) => el?.__vue__?.$root?.constructor?.version || el?.__vue_app__?.version).filter(Boolean)?.[0]";
+      const vueVersionDetector = "window?.Vue?.version || [...document.querySelectorAll(\"*\")].map((el) => el?.__vue__?.$root?.constructor?.version || el?.__vue__?.$root?.$options?._base?.version || el?.__vue_app__?.version).filter(Boolean)?.[0]";
       const fn = await page.waitForFunction(vueVersionDetector, { timeout: 20000 });
       const version = await fn.jsonValue() as string;
       if (version) infos.vueVersion = version;

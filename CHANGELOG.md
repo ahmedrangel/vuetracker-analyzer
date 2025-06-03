@@ -1,6 +1,24 @@
 # Changelog
 
 
+## v0.3.11
+
+[compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.3.10...v0.3.11)
+
+### 🩹 Fixes
+
+- Improve vue 2 version detector ([0db5432](https://github.com/ahmedrangel/vuetracker-analyzer/commit/0db5432))
+
+### 🏡 Chore
+
+- Update deps ([50aedc3](https://github.com/ahmedrangel/vuetracker-analyzer/commit/50aedc3))
+- Update docs and workspace ([6175d67](https://github.com/ahmedrangel/vuetracker-analyzer/commit/6175d67))
+- Lint ([31a812b](https://github.com/ahmedrangel/vuetracker-analyzer/commit/31a812b))
+
+### ❤️ Contributors
+
+- Ahmed Rangel ([@ahmedrangel](https://github.com/ahmedrangel))
+
 ## v0.3.10
 
 [compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.3.9...v0.3.10)

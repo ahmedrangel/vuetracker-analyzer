@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v0.3.12
+
+[compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.3.11...v0.3.12)
+
+### 🩹 Fixes
+
+- Improve vue detector ([cae68bf](https://github.com/ahmedrangel/vuetracker-analyzer/commit/cae68bf))
+
+### 🏡 Chore
+
+- Update deps ([66e3286](https://github.com/ahmedrangel/vuetracker-analyzer/commit/66e3286))
+
+### ❤️ Contributors
+
+- Ahmed Rangel ([@ahmedrangel](https://github.com/ahmedrangel))
+
 ## v0.3.11
 
 [compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.3.10...v0.3.11)

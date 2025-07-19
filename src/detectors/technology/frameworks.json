@@ -9,9 +9,10 @@
     "detectors": {
       "html": [
         "<div [^>]*id=\"__nuxt\"",
-        "<script [^>]*>window\\.__NUXT__"
+        "<script [^>]*>window\\.__NUXT__",
+        "<script [^>]*>window\\.useNuxtApp\\(\\)"
       ],
-      "js": "window?.__NUXT__ || window?.$nuxt || Boolean([...document.querySelectorAll('*')].find((el) => Boolean(el?.__vue_app__?.$nuxt)))",
+      "js": "window?.__NUXT__ || window?.useNuxtApp() || window?.$nuxt || Boolean([...document.querySelectorAll('*')].find((el) => Boolean(el?.__vue_app__?.$nuxt)))",
       "script": [
         "/_nuxt/"
       ],

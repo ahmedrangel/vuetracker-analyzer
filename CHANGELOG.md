@@ -1,6 +1,24 @@
 # Changelog
 
 
+## v0.3.13
+
+[compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.3.12...v0.3.13)
+
+### 🩹 Fixes
+
+- Adjust nuxt-related detectors in favor of nuxt v4 ([9a1a3eb](https://github.com/ahmedrangel/vuetracker-analyzer/commit/9a1a3eb))
+
+### 🏡 Chore
+
+- **release:** V0.3.12 ([2399189](https://github.com/ahmedrangel/vuetracker-analyzer/commit/2399189))
+- Update deps ([7433e39](https://github.com/ahmedrangel/vuetracker-analyzer/commit/7433e39))
+- Move pnpm .npmrc settings to pnpm-workspace.yaml ([1cb9934](https://github.com/ahmedrangel/vuetracker-analyzer/commit/1cb9934))
+
+### ❤️ Contributors
+
+- Ahmed Rangel ([@ahmedrangel](https://github.com/ahmedrangel))
+
 ## v0.3.12
 
 [compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.3.11...v0.3.12)

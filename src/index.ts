@@ -4,7 +4,7 @@ import tldParser from "tld-extract";
 import { consola } from "consola";
 import pkg from "../package.json" with { type: "json" };
 import { ERROR_CODES, isCrawlable, puppeteerArgs, puppeteerViewport } from "./utils";
-import { getFramework, getNuxtMeta, getNuxtModules, getPlugins, getUI, getVueMeta, hasVue } from "./tools";
+import { getFramework, getNuxtMeta, getNuxtModules, getPlugins, getUI, getVueMeta, hasVue, getServer } from "./tools";
 import type { SiteInfo } from "./types";
 
 let browser: Browser | null = null;
@@ -75,7 +75,8 @@ export async function analyze (originalUrl: string, options: { browserWSEndpoint
     framework: null, // nuxt | gridsome | quasar | vuepress | iles
     frameworkModules: [],
     plugins: [], // vue-router, vuex, vue-apollo, etc
-    ui: null // vuetify | bootstrap-vue | element-ui | tailwindcss
+    ui: null, // vuetify | bootstrap-vue | element-ui | tailwindcss
+    server: null // cloudflare | vercel | netlify | deno | apache
   };
   try {
     await page.setCacheEnabled(false); // disable cache for avoiding 304
@@ -215,7 +216,9 @@ export async function analyze (originalUrl: string, options: { browserWSEndpoint
         infos.framework.version = infos.framework.version.replace("Astro v", "");
       }
     }
-
+  
+    infos.server = await getServer(context);
+  
     await page.close();
     consola.success(`Done analyzing ${originalUrl}`);
     return infos;

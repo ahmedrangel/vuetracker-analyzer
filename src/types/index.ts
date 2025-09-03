@@ -32,13 +32,14 @@ export interface SiteInfo {
   frameworkModules: Technology[];
   plugins: Technology[];
   ui: Technology | null;
+  server: Technology | null;
 }
 
 export interface Detector {
   html?: string | string[];
   js?: string | string[];
   script?: string[];
-  headers?: Record<string, string>;
+  headers?: Record<string, string | boolean>;
   originalHtml?: string;
 }
 

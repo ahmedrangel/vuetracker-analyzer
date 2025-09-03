@@ -1,0 +1,72 @@
+{
+  "cloudflare": {
+    "metas": {
+      "slug": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "cloudflare",
+      "url": "https://cloudflare.com"
+    },
+    "detectors": {
+      "headers": {
+        "server": "cloudflare",
+        "cf-ray": true,
+        "cf-cache-status": true
+      }
+    }
+  },
+  "vercel": {
+    "metas": {
+      "slug": "vercel",
+      "name": "Vercel",
+      "icon": "vercel",
+      "url": "https://vercel.com"
+    },
+    "detectors": {
+      "headers": {
+        "x-vercel-id": true,
+        "x-vercel-cache": true
+      }
+    }
+  },
+  "netlify": {
+    "metas": {
+      "slug": "netlify",
+      "name": "Netlify",
+      "icon": "netlify",
+      "url": "https://www.netlify.com"
+    },
+    "detectors": {
+      "headers": {
+        "server": "netlify",
+        "x-nf-request-id": true
+      }
+    }
+  },
+  "deno": {
+    "metas": {
+      "slug": "deno",
+      "name": "Deno",
+      "icon": "deno",
+      "url": "https://deno.com"
+    },
+    "detectors": {
+      "headers": {
+        "server": "deployd",
+        "x-deno-trace-id": true
+      }
+    }
+  },
+  "apache": {
+    "metas": {
+      "slug": "apache",
+      "name": "Apache",
+      "icon": "apache",
+      "url": "https://apache.org"
+    },
+    "detectors": {
+      "headers": {
+        "server": "apache"
+      }
+    }
+  }
+}

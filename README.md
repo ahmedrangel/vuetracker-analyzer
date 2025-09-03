@@ -11,16 +11,18 @@ Install puppeter browser
 npx puppeteer browsers install chrome
 ```
 
-Create env secrets file
-```md
-NUXT_ANALYZER_PROXY_URL=
-NUXT_ANALYZER_PROXY_OS=
-```
-
 Start dev
 ```bash
 pnpm dev
 ```
+
+Server will start at `http://localhost:2082/`
+
+Scan site by going to: `http://localhost:2082/analyze?url=<URL>`
+
+Example
+``http://localhost:2082/analyze?url=https://nuxt.com``
+
 
 ## Credits
 Based on [nuxtlabs/vue-telescope-analyzer](https://github.com/nuxtlabs/vue-telescope-analyzer)

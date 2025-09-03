@@ -1,9 +1,9 @@
 import { createServer } from "http";
+import { platform } from "node:process";
 import { createServerAdapter } from "@whatwg-node/server";
 import { AutoRouter } from "itty-router";
 import { analyze } from "vuetracker-analyzer";
 import consola from "consola";
-import { platform } from "node:process";
 
 const router = AutoRouter();
 

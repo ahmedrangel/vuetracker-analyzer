@@ -23,6 +23,7 @@
     },
     "detectors": {
       "headers": {
+        "server": "vercel",
         "x-vercel-id": true,
         "x-vercel-cache": true
       }

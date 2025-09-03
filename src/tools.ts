@@ -6,6 +6,7 @@ import plugins from "./detectors/technology/plugins.json" with { type: "json" };
 import uis from "./detectors/technology/uis.json" with { type: "json" };
 import nuxtMeta from "./detectors/meta/nuxt.meta.json" with { type: "json" };
 import nuxtModules from "./detectors/technology/nuxt.modules.json" with { type: "json" };
+import servers from "./detectors/technology/servers.json" with { type: "json" };
 import type { Detector, DetectorContext, NuxtMeta, Technology, TechnologyDetectorData, TechnologyProps, VueMeta } from "./types/index";
 
 const detectors = {
@@ -17,7 +18,8 @@ const detectors = {
   nuxt: {
     meta: nuxtMeta as NuxtMeta,
     modules: nuxtModules as TechnologyDetectorData
-  }
+  },
+  servers: servers as TechnologyDetectorData
 };
 
 export function hasVue (context: DetectorContext) {
@@ -135,9 +137,20 @@ async function isMatching (detector: Detector, { originalHtml, html, scripts, pa
   if (headers && detector.headers && typeof detector.headers === "object" && Object.keys(detector.headers).length > 0) {
     for (const header of Object.keys(headers)) {
       if (Object.keys(detector.headers).find(key => key.toLowerCase() === header.toLowerCase())) {
-        if (detector.headers[header].toLowerCase() === headers[header].toLowerCase()) return true;
+        const detectorHeader = detector.headers[header];
+        if (typeof detectorHeader === "string" && detectorHeader.toLowerCase() === headers[header].toLowerCase()) return true;
+        else if (detectorHeader === true) return true;
       }
     }
   }
   return false;
+}
+
+export async function getServer (context: DetectorContext) {
+  for (const server of Object.keys(detectors.servers)) {
+    if (await isMatching(detectors.servers[server].detectors, context)) {
+      return detectors.servers[server].metas;
+    }
+  }
+  return null;
 }

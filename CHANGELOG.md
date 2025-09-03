@@ -1,6 +1,25 @@
 # Changelog
 
 
+## v0.3.14
+
+[compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.3.13...v0.3.14)
+
+### 🚀 Enhancements
+
+- Add server info detection ([#1](https://github.com/ahmedrangel/vuetracker-analyzer/pull/1))
+
+### 🏡 Chore
+
+- Update readme and playground example ([6585ead](https://github.com/ahmedrangel/vuetracker-analyzer/commit/6585ead))
+- Lint ([411dd2f](https://github.com/ahmedrangel/vuetracker-analyzer/commit/411dd2f))
+- Update deps ([9ca6b65](https://github.com/ahmedrangel/vuetracker-analyzer/commit/9ca6b65))
+
+### ❤️ Contributors
+
+- Ahmed Rangel ([@ahmedrangel](https://github.com/ahmedrangel))
+- Yizack Rangel ([@Yizack](https://github.com/Yizack))
+
 ## v0.3.13
 
 [compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.3.12...v0.3.13)

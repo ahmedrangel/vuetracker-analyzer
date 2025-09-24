@@ -1,6 +1,23 @@
 # Changelog
 
 
+## v0.3.15
+
+[compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.3.14...v0.3.15)
+
+### 🚀 Enhancements
+
+- Add more server detectors + improve headers detection ([#2](https://github.com/ahmedrangel/vuetracker-analyzer/pull/2))
+
+### 🏡 Chore
+
+- Update deps ([defc076](https://github.com/ahmedrangel/vuetracker-analyzer/commit/defc076))
+
+### ❤️ Contributors
+
+- Yizack Rangel ([@Yizack](https://github.com/Yizack))
+- Ahmed Rangel ([@ahmedrangel](https://github.com/ahmedrangel))
+
 ## v0.3.14
 
 [compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.3.13...v0.3.14)

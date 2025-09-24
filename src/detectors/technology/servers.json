@@ -52,7 +52,8 @@
     },
     "detectors": {
       "headers": {
-        "server": "deployd",
+        "server": ["deployd", "deno*"],
+        "via": "*prod.deno-cluster.net",
         "x-deno-trace-id": true
       }
     }
@@ -67,6 +68,64 @@
     "detectors": {
       "headers": {
         "server": "apache"
+      }
+    }
+  },
+  "cloudfront": {
+    "metas": {
+      "slug": "cloudfront",
+      "name": "CloudFront",
+      "icon": "aws-cloudfront",
+      "url": "https://aws.amazon.com/cloudfront/"
+    },
+    "detectors": {
+      "headers": {
+        "server": "cloudfront",
+        "via": "*cloudfront*",
+        "x-amz-cf-id": true,
+        "x-amz-cf-pop": true
+      }
+    }
+  },
+  "akamai": {
+    "metas": {
+      "slug": "akamai",
+      "name": "Akamai",
+      "icon": "akamai",
+      "url": "https://www.akamai.com"
+    },
+    "detectors": {
+      "headers": {
+        "akamai-grn": true,
+        "x-akam-sw-version": true,
+        "x-akamai-transformed": true,
+        "x-akamai-request-id": true
+      }
+    }
+  },
+  "nginx": {
+    "metas": {
+      "slug": "nginx",
+      "name": "Nginx",
+      "icon": "nginx",
+      "url": "https://nginx.org"
+    },
+    "detectors": {
+      "headers": {
+        "server": "nginx*"
+      }
+    }
+  },
+  "s3": {
+    "metas": {
+      "slug": "s3",
+      "name": "Amazon S3",
+      "icon": "aws-s3",
+      "url": "https://aws.amazon.com/s3/"
+    },
+    "detectors": {
+      "headers": {
+        "server": "AmazonS3"
       }
     }
   }

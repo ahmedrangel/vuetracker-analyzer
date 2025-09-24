@@ -103,6 +103,39 @@ export async function getNuxtModules (context: DetectorContext) {
   return Array.from(modules);
 }
 
+const isHeadersMatching = (headers: Record<string, string>, detectorHeaders: NonNullable<Detector["headers"]>): boolean => {
+  for (const headerKey of Object.keys(headers)) {
+    const key = Object.keys(detectorHeaders).find(detectorKey => detectorKey.toLowerCase() === headerKey.toLowerCase());
+    if (!key) continue;
+
+    const detectorHeader = detectorHeaders[key];
+    switch (typeof detectorHeader) {
+      case "boolean":
+        if (detectorHeader) return true;
+        break;
+      case "string":
+        if (detectorHeader.toLowerCase() === headers[key].toLowerCase()) return true;
+        // wildcard match
+        else if (detectorHeader.includes("*")) {
+          const pattern = `^${detectorHeader.replace(/\*/g, ".*").toLowerCase()}$`;
+          const regex = new RegExp(pattern, "i");
+          if (regex.test(headers[key])) return true;
+        }
+        break;
+      case "object":
+        if (Array.isArray(detectorHeader)) {
+          for (const value of detectorHeader) {
+            // recursive call to handle array of strings
+            const result = isHeadersMatching(headers, { [key]: value });
+            if (result) return result;
+          }
+        }
+        break;
+    }
+  }
+  return false;
+};
+
 async function isMatching (detector: Detector, { originalHtml, html, scripts, page, headers }: DetectorContext) {
   // If we can detect technology from response html
   if (detector.originalHtml) {
@@ -135,13 +168,7 @@ async function isMatching (detector: Detector, { originalHtml, html, scripts, pa
   }
   // If we can detect technology from headers
   if (headers && detector.headers && typeof detector.headers === "object" && Object.keys(detector.headers).length > 0) {
-    for (const header of Object.keys(headers)) {
-      if (Object.keys(detector.headers).find(key => key.toLowerCase() === header.toLowerCase())) {
-        const detectorHeader = detector.headers[header];
-        if (typeof detectorHeader === "string" && detectorHeader.toLowerCase() === headers[header].toLowerCase()) return true;
-        else if (detectorHeader === true) return true;
-      }
-    }
+    if (isHeadersMatching(headers, detector.headers)) return true;
   }
   return false;
 }

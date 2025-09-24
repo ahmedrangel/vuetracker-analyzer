@@ -39,7 +39,7 @@ export interface Detector {
   html?: string | string[];
   js?: string | string[];
   script?: string[];
-  headers?: Record<string, string | boolean>;
+  headers?: Record<string, string | boolean | string[]>;
   originalHtml?: string;
 }
 

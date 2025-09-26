@@ -687,5 +687,20 @@
         "(document.querySelector('.scalar-api-reference') || document.querySelector('.scalar-app')) && (window?.__NUXT__ || window?.useNuxtApp() || window?.$nuxt || Boolean([...document.querySelectorAll('*')].find((el) => Boolean(el?.__vue_app__?.$nuxt))))"
       ]
     }
+  },
+  "@dargmuesli/nuxt-cookie-control": {
+    "metas": {
+      "slug": "nuxt-cookie-control",
+      "name": "@dargmuesli/nuxt-cookie-control",
+      "icon": null,
+      "url": "https://github.com/dargmuesli/nuxt-cookie-control"
+    },
+    "detectors": {
+      "js": [
+        "window?.useNuxtApp?.()?.payload?.config?.public?.cookieControl",
+        "window?.__unctx__?.get('nuxt-app')?.use()?.payload?.config?.public?.cookieControl",
+        "window?.__NUXT__?.config?.public?.cookieControl"
+      ]
+    }
   }
 }

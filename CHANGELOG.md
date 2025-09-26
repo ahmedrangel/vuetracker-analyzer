@@ -1,6 +1,26 @@
 # Changelog
 
 
+## v0.3.16
+
+[compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.3.15...v0.3.16)
+
+### 🚀 Enhancements
+
+- Add nuxt-cookie-control module ([1853490](https://github.com/ahmedrangel/vuetracker-analyzer/commit/1853490))
+
+### 🩹 Fixes
+
+- Filter duplicated meta icons ([24f9954](https://github.com/ahmedrangel/vuetracker-analyzer/commit/24f9954))
+
+### 🏡 Chore
+
+- Update deps ([6654315](https://github.com/ahmedrangel/vuetracker-analyzer/commit/6654315))
+
+### ❤️ Contributors
+
+- Ahmed Rangel ([@ahmedrangel](https://github.com/ahmedrangel))
+
 ## v0.3.15
 
 [compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.3.14...v0.3.15)

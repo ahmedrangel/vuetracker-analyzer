@@ -162,7 +162,9 @@ export async function analyze (originalUrl: string, options: { browserWSEndpoint
     infos.meta.icons = await page.$$eval("head > link:is([rel=\"icon\"], [rel=\"shortcut icon\"])", elements => elements.map(element => ({
       url: element.href,
       sizes: element.sizes?.value || null
-    }))?.sort((a, b) => (Number(b.sizes?.split("x")[0]) || 0) - (Number(a.sizes?.split("x")[0]) || 0))).catch(() => []);
+    }))?.filter((icon, index, self) => (
+      index === self.findIndex(i => i.url === icon.url)
+    ))?.sort((a, b) => (Number(b.sizes?.split("x")[0]) || 0) - (Number(a.sizes?.split("x")[0]) || 0))).catch(() => []);
 
     infos.meta.ogImage = await page.$eval("head > meta:is([property=\"og:image\"], [name=\"og:image\"])", element => element.content).catch(() => null);
 

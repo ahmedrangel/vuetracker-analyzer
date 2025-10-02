@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v0.3.17
+
+[compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.3.16...v0.3.17)
+
+### 🚀 Enhancements
+
+- Add heroku server detector ([1983b52](https://github.com/ahmedrangel/vuetracker-analyzer/commit/1983b52))
+
+### 🏡 Chore
+
+- Update deps ([ea61bff](https://github.com/ahmedrangel/vuetracker-analyzer/commit/ea61bff))
+
+### ❤️ Contributors
+
+- Ahmed Rangel ([@ahmedrangel](https://github.com/ahmedrangel))
+
 ## v0.3.16
 
 [compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.3.15...v0.3.16)

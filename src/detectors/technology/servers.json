@@ -128,5 +128,19 @@
         "server": "AmazonS3"
       }
     }
+  },
+  "heroku": {
+    "metas": {
+      "slug": "heroku",
+      "name": "Heroku",
+      "icon": "heroku",
+      "url": "https://www.heroku.com/"
+    },
+    "detectors": {
+      "headers": {
+        "server": "heroku",
+        "via": "*heroku-router"
+      }
+    }
   }
 }

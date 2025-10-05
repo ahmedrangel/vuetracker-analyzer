@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.3.18
+
+[compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.3.17...v0.3.18)
+
+### 🚀 Enhancements
+
+- Add nuxt-aos module detector ([67cf097](https://github.com/ahmedrangel/vuetracker-analyzer/commit/67cf097))
+
+### ❤️ Contributors
+
+- Ahmed Rangel ([@ahmedrangel](https://github.com/ahmedrangel))
+
 ## v0.3.17
 
 [compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.3.16...v0.3.17)

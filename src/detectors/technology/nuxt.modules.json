@@ -702,5 +702,20 @@
         "window?.__NUXT__?.config?.public?.cookieControl"
       ]
     }
+  },
+  "nuxt-aos": {
+    "metas": {
+      "slug": "nuxt-aos",
+      "name": "nuxt-aos",
+      "icon": null,
+      "url": "https://github.com/egidiusmengelberg/nuxt-aos"
+    },
+    "detectors": {
+      "js": [
+        "window?.useNuxtApp?.()?.payload?.config?.public?.aos",
+        "window?.__unctx__?.get('nuxt-app')?.use()?.payload?.config?.public?.aos",
+        "window?.__NUXT__?.config?.public?.aos"
+      ]
+    }
   }
 }

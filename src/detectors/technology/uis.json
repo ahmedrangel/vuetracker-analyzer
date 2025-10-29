@@ -32,7 +32,10 @@
       "url": "https://vuetifyjs.com/"
     },
     "detectors": {
-      "js": "[...document.querySelectorAll('*')].map((el) => Boolean(el?.__vue__?.$vuetify)).filter(Boolean).length"
+      "js": [
+        "[...document.querySelectorAll('*')].map((el) => Boolean(el?.__vue__?.$vuetify)).filter(Boolean).length",
+        "window?.Vuetify?.version"
+      ]
     }
   },
   "bootstrap-vue": {

@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v0.3.19
+
+[compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.3.18...v0.3.19)
+
+### 🩹 Fixes
+
+- **vuetify:** Js detector ([ecf4aa5](https://github.com/ahmedrangel/vuetracker-analyzer/commit/ecf4aa5))
+
+### 🏡 Chore
+
+- Update deps ([6b22766](https://github.com/ahmedrangel/vuetracker-analyzer/commit/6b22766))
+
+### ❤️ Contributors
+
+- Ahmed Rangel ([@ahmedrangel](https://github.com/ahmedrangel))
+
 ## v0.3.18
 
 [compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.3.17...v0.3.18)

@@ -730,6 +730,19 @@
         "[...document?.styleSheets].filter(s => !s?.href || s?.href?.includes(location?.origin)).map(s => [...s?.cssRules].some(r => r?.cssText?.includes('@font-face') && r?.cssText?.includes('url(\"../_fonts/'))).some(v => v)"
       ]
     }
+  },
+  "nuxt-twemoji": {
+    "metas": {
+      "slug": "nuxt-twemoji",
+      "name": "nuxt-twemoji",
+      "icon": null,
+      "url": "https://github.com/Yizack/nuxt-twemoji"
+    },
+    "detectors": {
+      "js": [
+        "window?.useNuxtApp?.()?._appConfig?.twemoji",
+        "window?.__unctx__?.get('nuxt-app')?.use()?._appConfig?.twemoji"
+      ]
+    }
   }
 }
-

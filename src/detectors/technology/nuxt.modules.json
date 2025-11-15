@@ -717,5 +717,19 @@
         "window?.__NUXT__?.config?.public?.aos"
       ]
     }
+  },
+  "@nuxt/fonts": {
+    "metas": {
+      "slug": "nuxt-fonts",
+      "name": "@nuxt/fonts",
+      "icon": null,
+      "url": "https://github.com/nuxt/fonts"
+    },
+    "detectors": {
+      "js": [
+        "[...document?.styleSheets].filter(s => !s?.href || s?.href?.includes(location?.origin)).map(s => [...s?.cssRules].some(r => r?.cssText?.includes('@font-face') && r?.cssText?.includes('url(\"../_fonts/'))).some(v => v)"
+      ]
+    }
   }
 }
+

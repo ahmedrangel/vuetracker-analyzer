@@ -611,6 +611,8 @@
     },
     "detectors": {
       "js": [
+        "window?.useNuxtApp?.()?.payload?.config?.public?.auth",
+        "window?.__unctx__?.get('nuxt-app')?.use()?.payload?.config?.public?.auth",
         "(window?.useNuxtApp?.()?.payload?.state && window?.useNuxtApp?.()?.payload?.state?.['$snuxt-auth-ready'] && window?.useNuxtApp?.()?.payload?.state?.['$snuxt-session'])",
         "(window?.__NUXT__?.state && window?.__NUXT__?.state?.['$snuxt-auth-ready'] && window?.__NUXT__?.state?.['$snuxt-session'])"
       ]

@@ -727,7 +727,7 @@
     },
     "detectors": {
       "js": [
-        "[...document?.styleSheets].filter(s => !s?.href || s?.href?.includes(location?.origin)).map(s => [...s?.cssRules].some(r => r?.cssText?.includes('@font-face') && r?.cssText?.includes('url(\"../_fonts/'))).some(v => v)"
+        "[...document?.styleSheets].filter(s => !s?.href || s?.href?.includes(location?.origin)).map(s => [...s?.cssRules].some(r => r?.cssText?.includes('@font-face') && r?.cssText?.includes('url(\"../_fonts/'))).some(v => v) && Boolean((window?.__NUXT__ || window?.useNuxtApp() || window?.$nuxt || Boolean([...document.querySelectorAll('*')].find((el) => Boolean(el?.__vue_app__?.$nuxt)))))"
       ]
     }
   },

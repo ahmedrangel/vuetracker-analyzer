@@ -128,7 +128,12 @@
       "url": "https://github.com/nuxt-community/recaptcha-module"
     },
     "detectors": {
-      "js": "window?.$nuxt?.$options?.context?.app?.$recaptcha"
+      "js": [
+        "window?.$nuxt?.$options?.context?.app?.$recaptcha",
+        "window?.useNuxtApp?.()?.payload?.config?.public?.recaptcha",
+        "window?.__unctx__?.get('nuxt-app')?.use()?.payload?.config?.public?.recaptcha",
+        "window?.__NUXT__?.config?.public?.recaptcha"
+      ]
     }
   },
   "@nuxtjs/google-gtag": {

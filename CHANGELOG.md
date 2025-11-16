@@ -1,6 +1,30 @@
 # Changelog
 
 
+## v0.3.20
+
+[compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.3.19...v0.3.20)
+
+### 🚀 Enhancements
+
+- Add @nuxt/fonts module ([1fb86f8](https://github.com/ahmedrangel/vuetracker-analyzer/commit/1fb86f8))
+- Add nuxt-twemoji module ([874d1c8](https://github.com/ahmedrangel/vuetracker-analyzer/commit/874d1c8))
+- Add nuxt-seo-utils module ([e4943c0](https://github.com/ahmedrangel/vuetracker-analyzer/commit/e4943c0))
+
+### 🩹 Fixes
+
+- **@nuxt/fonts:** Ensure nuxt is detected ([5ab7924](https://github.com/ahmedrangel/vuetracker-analyzer/commit/5ab7924))
+- @nuxtjs/recaptcha detectors ([1276a45](https://github.com/ahmedrangel/vuetracker-analyzer/commit/1276a45))
+
+### 🏡 Chore
+
+- Update deps ([38dfb1b](https://github.com/ahmedrangel/vuetracker-analyzer/commit/38dfb1b))
+- **nuxt-auth-utils:** Adjust nuxt auth utils detector ([3a16567](https://github.com/ahmedrangel/vuetracker-analyzer/commit/3a16567))
+
+### ❤️ Contributors
+
+- Ahmed Rangel ([@ahmedrangel](https://github.com/ahmedrangel))
+
 ## v0.3.19
 
 [compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.3.18...v0.3.19)

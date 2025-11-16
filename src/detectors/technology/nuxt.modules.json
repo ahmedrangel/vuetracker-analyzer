@@ -746,5 +746,20 @@
         "window?.__unctx__?.get('nuxt-app')?.use()?._appConfig?.twemoji"
       ]
     }
+  },
+  "nuxt-seo-utils": {
+    "metas": {
+      "slug": "nuxt-seo-utils",
+      "name": "nuxt-seo-utils",
+      "icon": null,
+      "url": "https://github.com/harlan-zw/nuxt-seo-utils"
+    },
+    "detectors": {
+      "js": [
+        "window?.useNuxtApp?.()?.payload?.config?.public?.['seo-utils']",
+        "window?.__unctx__?.get('nuxt-app')?.use()?.payload?.config?.public?.['seo-utils']",
+        "window?.__NUXT__?.config?.public?.['seo-utils']"
+      ]
+    }
   }
 }

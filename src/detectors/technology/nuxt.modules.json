@@ -748,7 +748,9 @@
     "detectors": {
       "js": [
         "window?.useNuxtApp?.()?._appConfig?.twemoji",
-        "window?.__unctx__?.get('nuxt-app')?.use()?._appConfig?.twemoji"
+        "window?.__unctx__?.get('nuxt-app')?.use()?._appConfig?.twemoji",
+        "window?.useNuxtApp?.()?.payload?.config?.public?.twemoji",
+        "window?.__unctx__?.get('nuxt-app')?.use()?.payload?.config?.public?.twemoji"
       ]
     }
   },

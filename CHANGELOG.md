@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.3.21
+
+[compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.3.20...v0.3.21)
+
+### 🏡 Chore
+
+- Adjust nuxt-twemoji js detectors ([d917a68](https://github.com/ahmedrangel/vuetracker-analyzer/commit/d917a68))
+
+### ❤️ Contributors
+
+- Ahmed Rangel ([@ahmedrangel](https://github.com/ahmedrangel))
+
 ## v0.3.20
 
 [compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.3.19...v0.3.20)

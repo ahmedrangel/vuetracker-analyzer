@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.3.22
+
+[compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.3.21...v0.3.22)
+
+### 🩹 Fixes
+
+- **nuxt:** Detect Nuxt version via detector meta ([bb4f09c](https://github.com/ahmedrangel/vuetracker-analyzer/commit/bb4f09c))
+
+### ❤️ Contributors
+
+- Ahmed Rangel ([@ahmedrangel](https://github.com/ahmedrangel))
+
 ## v0.3.21
 
 [compare changes](https://github.com/ahmedrangel/vuetracker-analyzer/compare/v0.3.20...v0.3.21)

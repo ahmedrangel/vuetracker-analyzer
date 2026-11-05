@@ -68,6 +68,9 @@ export interface NuxtMeta {
   static: {
     js: string;
   };
+  version: {
+    js: string | string[];
+  };
 }
 
 export interface VueMeta {

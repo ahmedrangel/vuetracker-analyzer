@@ -78,11 +78,18 @@ export async function getPlugins (context: DetectorContext) {
 }
 
 export async function getNuxtMeta (context: DetectorContext) {
-  const meta: { ssr: boolean, static: boolean } = { ssr: false, static: true };
+  const meta: { ssr: boolean, static: boolean, version: string } = { ssr: false, static: true, version: "" };
 
   await Promise.all(
     Object.keys(detectors.nuxt.meta).map(async (key) => {
-      meta[key as keyof typeof meta] = await isMatching(detectors.nuxt.meta[key as keyof NuxtMeta], context);
+      if (key === "ssr" || key === "static") {
+        meta[key] = await isMatching(detectors.nuxt.meta[key], context);
+      }
+      if (key === "version") {
+        for (const js of asArray(detectors.nuxt.meta[key].js)) {
+          meta[key] = await context.page.evaluate(js) as string;
+        }
+      }
     })
   );
 

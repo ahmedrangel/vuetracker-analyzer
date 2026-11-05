@@ -4,5 +4,11 @@
   },
   "static": {
     "js": "window?.$nuxt?.$options?.context?.isStatic || window?.__NUXT__?.prerenderedAt || window?.useNuxtApp()?.payload?.prerenderedAt"
+  },
+  "version": {
+    "js": [
+      "window?.__unctx__?.get('nuxt-app')?.use()?.versions?.nuxt",
+      "window?.useNuxtApp()?.versions?.nuxt"
+    ]
   }
 }

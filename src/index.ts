@@ -203,7 +203,7 @@ export async function analyze (originalUrl: string, options: { browserWSEndpoint
         getNuxtMeta(context),
         getNuxtModules(context)
       ]);
-      infos.framework.version = await page.evaluate("window?.__unctx__?.get('nuxt-app')?.use()?.versions?.nuxt") as string;
+      infos.framework.version = meta.version;
       if (!infos.framework.version && infos.vueVersion) {
         infos.framework.version = infos.vueVersion.split(".")[0];
       }

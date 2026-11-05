@@ -1,10 +1,9 @@
+minimumReleaseAge: 0
 shamefullyHoist: true
 strictPeerDependencies: false
 
 packages:
   - playground
-ignoredBuiltDependencies:
-  - esbuild
-  - unrs-resolver
-onlyBuiltDependencies:
-  - puppeteer
+allowBuilds:
+  esbuild: false
+  puppeteer: true
